@@ -4,3 +4,5 @@ langchain
 sentence-transformers
 python-dotenv
 google-generativeai
+fuzzywuzzy
+python-levenshtein
