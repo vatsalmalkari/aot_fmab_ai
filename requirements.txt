@@ -3,3 +3,4 @@ chromadb
 langchain
 sentence-transformers
 python-dotenv
+google-generativeai
