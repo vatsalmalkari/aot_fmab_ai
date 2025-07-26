@@ -1,0 +1,20 @@
+{
+  "name": "Scar",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Scar the Ishvalan"],
+  "gender": "male",
+  "affiliations": ["Ishvalan survivors", "Resistance against Amestris Military"],
+  "family_members": ["Scar's brother"],
+  "key_relationships": ["Edward and Alphonse brothers", "Ishvalan survivors", "Resistance fighters"],
+  "abilities": ["Alkahestry", "Enhanced combat skills","Alchemy"],
+  "status": "alive",
+  "content": "Scar is one of the survivors of the Ishvalan Extermination Campaign, and named for the scar across his face.\nDepicted as an Ishvalan warrior priest, Scar was a capable fighter who desperately tried to save whomever he could from the onslaught.\nHowever, the state alchemist's enhanced alchemical attacks were too much.\nScar's brother, who had been researching Amestrian alchemy and Xingese alkahestry in an attempt to gain power against the State, gives Scar his right arm in order to save his life.\nScar initially targeted State Alchemists for their role in his people's slaughter, even becoming an enemy of the Elrics, but ultimately sided with them upon learning that the Homunculi are his actual enemies.",
+  "metadata": {
+    "source_file": "Scar.txt",
+    "traits": ["vengeful", "tragic", "redemptive"],
+    "archetype": ["Ishvalan warrior priest","the state alchemist killer"],
+    "narrative_function": "anti-hero",
+    "significant_locations": ["Ishval city", "Central city", "Amestris"]
+  }
+}

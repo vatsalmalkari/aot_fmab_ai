@@ -1,0 +1,20 @@
+{
+  "name": "Izumi",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Izumi Curtis", "housewife", "teacher"],
+  "gender": "female",
+  "affiliations": ["Curtis Meats", "State Military"],
+  "family_members": ["Sig Curtis"],
+  "key_relationships": ["Alphonse Elric", "Sig Curtis", "Van Hohenheim", "Edward Elric"],
+  "abilities": ["Alchemy", "Martial arts", "Survival skills"],
+  "status": "alive",
+  "content": "Izumi Curtis is the short-tempered, buxom and caring alchemy teacher of the Elric brothers who is also a butcher at her family business Curtis Meats.\nShe agreed to train the brothers to hone their alchemical abilities after their mother died.\nShe expands their training with a regimen of philosophy, martial arts, and living off the land.\nHer methods are derived from her own alchemy training: she was forced to survive in the northern region surrounding Briggs Fortress for a month (although it turns out she succeeded by stealing supplies from the northern fortress).\nShe thinks of the Elrics as her own sons, and although she severs her student-teacher ties with them after learning of their attempts with human transmutation (and Ed's joining the State Military), she continues to do all she can to help them.\nShe can be quite violent when punishing or sparring with the Elric brothers, so they tend to be deathly afraid of her.\nHer claim \"I'm a housewife!\n\" is what she will often casually declare herself as one whenever someone asks who she is.\nThis is due to her distaste of the alchemist profession.\nIzumi and her husband Sig were expecting a child years before the start of the series; however, their son was stillborn.\nIzumi tried and failed to revive the child through human transmutation.\nThe failed attempt took some of her reproductive organs, resulting in her inability to ever again be pregnant, and to periodically vomit blood as well as leave her weak, the latter much to others' disgust.\nIzumi could thereafter perform alchemy without a transmutation circle, because in the failed transmutation she saw the Truth.\nIzumi attracts the attention of the State Military for having survived the failed human transmutation.\nAs she and her husband travel around Amestris in order to avoid the military, they eventually meet Ed and Al's father Van Hohenheim.\nHe rearranges her insides to ease the blood flow, and persuades her to help collaborate in bringing down the State Military.\nThereafter, she is never again seen coughing up blood.\nShe has a tattoo of a Flamel on her left breast.",
+  "metadata": {
+    "source_file": "Izumi.txt",
+    "traits": ["tough", "caring", "experienced"],
+    "archetype": "the strict teacher",
+    "narrative_function": "mentor",
+    "significant_locations": ["Central city", "Briggs Fortress", "Curtis Meats"]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 1",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "1",
+  "arc": "first arc",
+  "key_events": ["Edward and Alphonse are called in to stop an alchemist", "Isaac McDougal attacks Central by freezing it", "Roy, Ed, Al, and Bradley stop him"],
+  "featured_characters": ["Edward", "Alphonse", "Roy Mustang", "King Bradley", "McDougal"],
+  "content": "The Elric brothers, Edward and Alphonse, have already made a strong reputation for themselves despite Edward's short military career.\nThey are called upon by the Führer King Bradley and Colonel Roy Mustang to hunt down the \"Freezing Alchemist\", the rogue state alchemist Isaac McDougal.\nEdward and Alphonse ambush and successfully capture their target.\nHowever, Edward becomes enraged by McDougal calling him \"small\" and McDougal finds an opening and escapes.\nThe Elric brothers and the state military are forced to confront McDougal again when he simultaneously activates numerous transmutation circles in Central.\nThis creates an alchemic reaction encompassing the entire command center.\nEdward suspects the use of a philosopher's stone, but is unable to confirm his suspicion.\nLuckily, the Elric brothers, Major Alex Louis Armstrong (General Olivier Armstrong's brother), and Mustang succeed in thwarting McDougal's plans to bury Central in ice.\nThe Führer confronts McDougal as he attempts to escape.\nIn the brief battle that follows, McDougal is easily sliced to death by the Führer, who later credits Mustang and the Elric brothers with helping to accomplish the mission.",
+  "metadata": {
+    "source_file": "episode_1.txt",
+    "themes": ["duty", "mystery", "fear"]
+  }
+}

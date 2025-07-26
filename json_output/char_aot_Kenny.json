@@ -1,0 +1,20 @@
+{
+    "name": "Kenny",
+    "anime": "aot",
+    "type": "character",
+    "aliases": ["Kenny Ackerman"],
+    "gender": "male",
+    "affiliations": ["Yeagerist", "Survey corp"],
+    "family_members": ["Kuchel Ackerman", "Levi Ackerman"],
+    "key_relationships": ["Levi Ackerman", "Kuchel Ackerman", "Uri Reiss", "Rod Reiss"],
+    "abilities": ["Melee Combat", "Long range combat"],
+    "status": "dead",
+    "content": "Serving directly under the Reiss family, Kenny Ackerman leads the Anti-Personnel Control Squad, an elite counterinsurgency unit equipped with Vertical Maneuvering Equipment and slug guns specifically designed for killing humans. Kenny was also the man who murdered Historia's mother Alma sometime after the incident of Wall Maria. In the past, he lived a rough life because the Ackerman clan were forced to live in the Underground City, as the Reiss family condemned them as a threat since they are immune to the Founding Titan's controlling power. He is the maternal uncle of Levi through his younger sister  Ackerman, who was forced into prostitution and eventually died of a venereal illness, and raised young Levi for a short time until the latter awakened his Ackerman abilities. Prior to serving the Reiss family, Kenny was an infamous criminal hitman nicknamed, Kenny the Ripper, and murdered Military Police officers. He then attempted to assassinate Uri, but pledged his loyalty when the latter expressed resentment towards the Ackerman persecution and personally repented for forgiveness from Kenny. After Uri passed on the Titan power to his niece Frieda, Kenny continued serving Rod, but only out of his deep respect towards his late friend Uri. After the incident with the Female Titan, Kenny personally leads the Interior Police against the Survey Corps and ambushes Levi's team, and kidnaps Eren and Historia under orders from Rod. He is shot by Levi with a musket during the fight, but survives unscathed thanks to his body armor. He later fights his nephew again, defending the Reiss chapel from Squad Levi, but is forced to flee after being injured. After learning of Rod's intentions for Historia, Kenny decides to betray Rod by partially freeing Eren so he can fight back. After Rod transforms into a Titan, Kenny is fatally wounded by falling boulders when the chapel collapses. In his final moments, Kenny reveals that his sister is Levi’s mom and gives him a vial of Titan serum, which Levi later used to save Armin at Shiganshina.",
+    "metadata": {
+      "source_file": "Kenny.txt",
+      "traits":["Manipulative", "ruthless", "leadership"],
+      "archetype": "the leader of Anti-Personnel Control Squad",
+      "narrative_function": "side character",
+      "significant_locations": ["Capital", "chapel", "Paradis island"]
+    }
+  }

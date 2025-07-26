@@ -1,0 +1,20 @@
+{
+  "name": "Eren",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Eren Yeager", "Devil of Paradis", "Humanity's last hope"],
+  "gender": "male",
+  "affiliations": ["Survey Corps", "Yeagerists"],
+  "family_members": ["Grisha Yeager", "Carla Yeager", "Zeke Yeager"],
+  "key_relationships": ["Mikasa Ackerman", "Armin Arlert", "Reiner Braun", "Grisha Yeager", "Carla Yeager"],
+  "abilities": ["Titan Shifting", "Founding Titan", "Attack Titan", "Warhammer Titan"],
+  "status": "dead",
+  "content": "The protagonist of the series who, after witnessing his mother being devoured by a Titan while escaping his hometown as a young boy, dedicates his life to their eradication and joins the Survey Corps.\n His mother is Carla Yeager, his father is Grisha Yeager, his half brother is Zeke Yeager, and his best friends are Armin Arlert and Mikasa Ackerman.\nAfter graduating fifth in his cadet class, he is swallowed by a bearded Titan during his first mission in Trost.\nHowever, he soon reappears as a 15-meter (49 ft) Titan who fights other Titans on equal ground.\nLater on this is revealed to be because his father had killed the Reiss family and passed down the power of the Founding Titan and Attack Titan to Eren by having him eat him.\nEren's ability as a Titan makes him the target of multiple parties that include those who see him as a tool to eradicate the Titans, other humans who can become Titans, and those who perceive Eren as a rebellion-inducing threat to the status quo.\nPlaced into the Survey Corps' Special Operations Squad, he attempts to control his Titan-changing ability and discovers he has other abilities as well.\nIn the final arc, Eren, in order to fulfill his own corrupted view of freedom, unleashes millions of Colossal Titans in a genocidal crusade against the rest of the world that wipes out 80% of humanity.\nThe Survey Corps and Marleyan Warriors unite to stop him, and Mikasa is ultimately forced to kill him.\nPrior to the battle, Eren explains to Armin in the Paths why he went through with his actions, as well as admits to having feelings for Mikasa and wanting to be with her and their friends.\nDespite Armin's pleas, Eren states he must die for his sins.\nMikasa returns to Shiganshina with his head, where he is buried under the same tree he used to nap.\nOver time, the tree grew to resemble the tree where the organism that granted Ymir her Titan power lived.",
+  "metadata": {
+    "source_file": "Eren.txt",
+    "traits": ["fearless", "impulsive", "manipulative"],
+    "archetype": ["the fallen hero", "the villain"],
+    "narrative_function": "protagonist",
+    "significant_locations": ["Shiganshina District", "Paradise Island", "Marley"]
+  }
+}

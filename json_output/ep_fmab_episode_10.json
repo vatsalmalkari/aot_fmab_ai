@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 10",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "10",
+  "arc": "fifth laboratory arc",
+  "key_events": ["Hughes finds truth", "Hughes is killed by envy", "Elrics and Winry go to rush valley"],
+  "featured_characters": ["Hughes", "Edward", "Alphonse", "Winry", "Roy", "Envy"],
+  "content": "Fuhrer King Bradley appears at the hospital and warns the Elric brothers to be careful around the military, and he then exits through a window to evade his subordinates.\nEdward and Alphonse decide to go to the town of Dublith to visit their alchemy teacher, Izumi Curtis, to ask her for information about the philosopher's stone.\nThey agree to take Winry with them when she notices that Rush Valley, a town known for creating the best automail in the world, is on the way to Dublith.\nMeanwhile, Hughes links the problems in Liore, the fifth laboratory, and the Ishval civil war.\nHe discovers a connection, but is then attacked by Lust.\nHe escapes her and tries to contact Mustang with his information at a public telephone booth, only to be pursued and gunned down by Envy, disguised firstly as Ross, and then as his wife Gracia.\nHughes is posthumously promoted to the rank of brigadier general while his murder is investigated by Mustang, who concludes via Armstrong that a high ranked member of the military may be responsible for ordering Hughes' death.",
+  "metadata": {
+    "source_file": "episode_10.txt",
+    "themes": ["secrecy", "truth", "death"]
+  }
+}

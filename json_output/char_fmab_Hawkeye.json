@@ -1,0 +1,20 @@
+{
+  "name": "Hawkeye",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Riza Hawkeye", "First Lieutenant Hawkeye"],
+  "gender": "female",
+  "affiliations": ["State Military", "Roy Mustang's team"],
+  "family_members": ["Berthold Hawkeye"],
+  "key_relationships": ["Roy Mustang", "Maes Hughes", "Black Hayate"],
+  "abilities": ["Sniper proficiency", "Tactical combat"],
+  "status": "alive",
+  "content": "First Lieutenant Riza Hawkeye is Roy Mustang's most trusted and dearest subordinate.\nShe often carries out many of the tasks he is too lazy to do, acts as his personal assistant, and protects him from danger.\nShe holds a strong sense of admiration for him, even willing to put her own life at risk; Roy returns this and occasionally refers to her as \"My Queen\", his chess code name for her.\nShe also doubles as his voice of reason, keeping cool in heated situations, and scolding him when he allows his emotions to get in the way.\nRiza and Roy seem to share a close relationship as she identifies him as her most precious person.\nRiza specializes in firearms, particularly sniper rifles, and can hit nearly any target with lethal accuracy.\nIn the series, she adopts a dog named Black Hayate from Kain Fuery that she raises with stern discipline; when Hayate urinates indoors, she fires a number of warning rounds at the wall around the dog to reinforce that doing so is against established protocol.\nIn the form of a tattoo on her back, Riza bears the final notes to her father's work on Flame Alchemy, and his legacy as an alchemist and Mustang's teacher.\nAfter seeing what Mustang was capable of during the Ishval War with such ability, Riza begs Roy to burn the tattoo, fearing the damage future flame alchemists could cause.\nRiza is reassigned as King Bradley's personal assistant to be used as a hostage when Mustang learns the homunculi control the State.\nWhen she discovers that King Bradley's adopted son, Selim, is a homunculus as well, she sends her discovery to Mustang in code as soon as she can.\nShe eventually defects from the military to help Mustang overthrow King Bradley.",
+  "metadata": {
+    "source_file": "Hawkeye.txt",
+    "traits": ["loyal", "dedicated", "protective"],
+    "archetype": "the loyal subordinate",
+    "narrative_function": "supporting character",
+    "significant_locations": ["Central city", "Amestris", "Ishval"]
+  }
+}

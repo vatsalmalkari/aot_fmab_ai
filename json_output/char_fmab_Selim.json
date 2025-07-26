@@ -1,0 +1,20 @@
+{
+  "name": "Selim",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Pride", "Selim Bradley", "Pride the Arrogant"],
+  "gender": "male",
+  "affiliations": ["homunculi", "Father"],
+  "family_members": ["Father", "Bradley", "Mrs. Bradley", "Edward Elric"],
+  "key_relationships": ["Father", "Mrs. Bradley"],
+  "abilities": ["Shadow manipulation", "Possession", "Destruction", "Transformation"],
+  "status": "dead",
+  "content": "Pride (or Selim) the Arrogant is the first of Father's homunculi to be created, resembling Father's true form as he appears as an amorphous shadow with multiple eyes.\nHe orders his younger \"siblings\" to perform their respective tasks.\nPride can destroy or manipulate anything that his shadow comes into contact with, see anything through his shadow, possess the bodies of others by repressing their connections to their respective souls, and gain the physical traits of whomever he eats.\nThe presence of his unleashed form gives off an intense, dreadful pressure.\nHis identity is a mystery until the latter half of the series when he is revealed to be no other than Selim Bradley, the adoptive son of King Bradley.\nPride can only exist within a given area: the area surrounding his host body and the underground transmutation circle running throughout Amestris, which he is tasked to guard.\nHe needs a light source in order to be able to cast, and subsequently use, his shadow, and it can similarly be \"killed\" if the light becomes too bright.\nHubristic and boastful, he bears disdain for the human race, enjoys shaming and mocking others, and acts in a guiltless, abhorrent, and self-seeking way towards virtually everyone, including most of his fellow Homunculi.\nHe gets angered by any defiance coming from his younger \"siblings\".\nHe thinks in a very biased manner, using excuses to provide justifications for his cruelty.\nDespite these baleful traits, he has some attachment to his adoptive human mother.\nThe Elric brothers and their allies battle Pride several times, beginning on the eve of the Promised Day.\nAfter a weakened Pride tries to hijack Ed's body in a ditch attempt to survive that fails because of Kimblee's soul stopping him, Edward destroys Pride's body in battle, reducing him to his true form: a minuscule, fetus-like creature.\nAfter the battle with Father ends, the now powerless Pride is brought to his adoptive mother and raised all over again.\nTwo years later, Selim is shown to have grown into a much more compassionate young child.",
+  "metadata": {
+    "source_file": "Selim.txt",
+    "traits": ["sadistic", "manipulative", "deceitful"],
+    "archetype":"The first child of Father",
+    "narrative_function": "the oldest sin",
+    "significant_locations": ["Central city", "Amestris", "Father's lair", "Underground transmutation circle"]
+  }
+}

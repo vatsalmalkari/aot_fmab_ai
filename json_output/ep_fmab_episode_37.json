@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 37",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "37",
+  "arc": "briggs arc",
+  "key_events": ["Hawkeye finds out Selim is Pride", "Edward given offer by Kimblee", "find scar and marcoh"],
+  "featured_characters": ["Edward", "Alphonse", "Winry", "Kimblee", "Hawkeye", "Pride"],
+  "content": "Edward has his automail upgraded by Winry, while Kimblee issues orders to keep Alphonse separated from Edward.\nOlivier sends a search party down into the tunnels to search for the missing troops.\nThey find a couple of survivors who warn them not to turn any lights on or a monster will come.\nHawkeye discovers that Selim is the first homunculus called Pride, who attacks from the shadows.\nKimblee orders Edward to search for Scar and Marcoh, and to create a blood crest similar to Ishval in Briggs Fortress.\nHe tempts Edward with a philosopher's stone if he accepts.\nAfter telling Alphonse and Winry about the situation, Edward accepts the job, although Alphonse suspects that Edward does not intend to use the stone.\nAs the Elric brothers leave to search for Scar, Winry decides to accompany them, suspecting their real intent is to find May and learn Xingese alkahestry.",
+  "metadata": {
+    "source_file": "episode_37.txt",
+    "themes": ["morality", "trust", "friendship"]
+  }
+}

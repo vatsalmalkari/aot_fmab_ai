@@ -1,0 +1,20 @@
+{
+  "name": "Armin",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Armin Arlert"],
+  "gender": "male",
+  "affiliations": ["104th Training Corps", "Survey Corps"],
+  "family_members": ["grandfather"],
+  "key_relationships": ["Eren Yeager", "Mikasa Ackerman", "Annie Leonhart"],
+  "abilities": ["Titan Shifting", "Strategic Thinking", "Leadership"],
+  "status": "alive",
+  "content": "Armin is Eren's and Mikasa's other childhood friend.\nHis parents tried to venture beyond the Wall by creating a hot air balloon but were found out and killed by the First Interior Squad of the Military Police, leaving Armin to be raised by his grandfather.\nArmin's grandfather secretly possessed an illegal book containing information about the world beyond the Walls, which Armin was fascinated by and showed to Eren, kindling their desire to see the outside world.\nAfter the fall of Wall Maria, Armin's grandfather was sent along with 1/5 of the population (mostly Wall Maria refugees) on a high-risk operation to \"reclaim Wall Maria\" and died, leaving Armin an orphan.\nAfter joining the Training Corps with Eren and Mikasa, Armin initially had an inferiority complex regarding how he fell behind his companions in combat and endurance, but his confidence slowly grew as he realized he could use his brain and strategic abilities to help them.\nDuring a battle in Shiganshina, Armin comes up with a plan to capture Bertolt but is mortally wounded from the severe burns he sustained.\nLevi saves Armin by injecting him with Titan serum instead of Erwin, and Armin then acquires the Colossal Titan's power by eating Bertolt.\nAfter investigating the Volunteers to learn Zeke and Eren's intentions, he is imprisoned in Shiganshina district by the Yeagerists.\nDuring the Marleyan ambush, he battles Pieck, before becoming horrified upon learning Eren's intentions to utilize the full Rumbling.\nAfter initially struggling with survivor's guilt, he joins the alliance to stop Eren from destroying all life outside Paradis, and later, after Hange's death, became the 15th commander of the Survey Corps.\nDuring the battle of Heaven and Earth, he was devoured by an Okapi Titan and entered the Paths, where he convinced Zeke to surrender his life to stop the Rumbling and gained the cooperation of past Titan shifters.\nLater, Armin was brought into the Paths by Eren, who revealed his true motivations.\nIn the anime, Armin chastises Eren for his actions, before eventually comforting him before the memory ends.\nAfter Eren's death, he was appointed alongside others from Paradis and Marley as an ambassador for peace.",
+  "metadata": {
+    "source_file": "Armin.txt",
+    "traits": ["intelligent", "compassionate", "loyal"],
+    "archetype": "the strategist",
+    "narrative_function": "dueteragonist",
+    "significant_locations": ["Shiganshina District", "Paradise Island", "Marley"]
+  }
+}

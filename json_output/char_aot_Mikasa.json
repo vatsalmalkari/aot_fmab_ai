@@ -1,0 +1,20 @@
+{
+  "name": "Mikasa",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Mikasa Ackerman"],
+  "gender": "female",
+  "affiliations": ["Survey Corps", "104th Training Corps"],
+  "family_members": ["Eren Yeager"],
+  "key_relationships": ["Eren Yeager", "Armin Arlert", "Kuchel Ackerman"],
+  "abilities": ["Combat Skills", "Vertical Maneuvering Equipment Proficiency", "Titan Combat Proficiency"],
+  "status": "alive",
+  "content": "Mikasa is Eren's childhood friend who was taken in by his family after seeing her parents brutally murdered by human traffickers.\nShe is shown to feel a strong sense of gratitude toward them, especially Eren, who had saved her life and given her his scarf.\nHer parents' tragic deaths had an overwhelming influence on her, causing her to lose her innocence and realize the world's cruelty.\nThis caused her personality to become more quiet and withdrawn, maintaining a stoic expression except when it comes to Eren and her friends.\nMikasa joins Eren in the Survey Corps, determined to ensure his safety.\nShe graduates from the Training Corps at the top of her class, and is regarded by officers as an unprecedented genius and prodigy.\nAs later revealed, this is due to Mikasa's father being a descendant of the Ackerman clan, an Eldian bloodline that was genetically modified to create super soldiers equal to a Titan in strength, originally designed to protect Eldia's king.\nWhen under duress, these genetically inherited abilities may allow a descendant access to their ancestors' battle experience.\nMikasa's instincts were first awakened in the aftermath of her parents' deaths when Eren urged her to 'fight' back against her kidnappers.\nThough technically half-blooded, she is also the last known person of Asian descent residing in the Walls.\nA wrist tattoo inherited from her mother indicates that she is descended from the prominent Azumabito family, a cadet Shogun branch from the Oriental nation of Hizuru, whose ancestors migrated from their native land to Paradis as honored ambassadors.\nWhile investigating Marley's volunteer soldiers with the Survey Corps, Eren lies to Mikasa that he has always hated her for being a slave to her Ackermann blood and being \"forced\" to protect him.\nIn turn, she becomes despondent and removes her scarf from her neck.\nWhile still caring for Eren, Mikasa decides to join the alliance to stop Eren's planned genocide on the world.\nIn the climax against Eren's forces, Mikasa is brought into Paths by Eren, showing her an alternate scenario where she and Eren ran away together following their conversation in Marley.\nEren comforts her, but asks she forget about him once he is dead.\nReturning to reality, Mikasa refuses, and ultimately kills him to save humanity.\nShe collects his head and returns it to Shiganshina to bury it under the tree.\nShe continues to visit his grave until her own death many years later.",
+  "metadata": {
+    "source_file": "Mikasa.txt",
+    "traits": ["ruthless", "loyal", "stoic"],
+    "archetype": " the Protector",
+    "narrative_function": "main character",
+    "significant_locations": ["Wall Rose", "Trost District", "Shiganshina District", "Marley", "Paths"]
+  }
+}

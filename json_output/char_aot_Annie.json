@@ -1,0 +1,20 @@
+{
+  "name": "Annie",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Annie Leonhart"],
+  "gender": "female",
+  "affiliations": ["104th Training Corps", "Marleyan Warriors"],
+  "family_members": ["father"],
+  "key_relationships": ["Reiner Braun", "Armin Arlert"],
+  "abilities": ["Titan Shifting", "Melee Combat", "Hardening"],
+  "status": "alive",
+  "content": "An Eldian cadet of the Marleyan Warriors, Annie is introduced as a cadet in the 104th Training Corps, where she graduated ranking 4th in her class.\nShe has short blonde hair and is a small-statured loner who is skilled in melee combat, having been raised by her father to consider the world her enemy.\nAnnie is later revealed to be a member of the Warriors and part of Reiner's infiltration team to capture the Founding Titan.\nShe is also the holder of the Female Titan, a 14-meter (46 ft) Titan with an unprecedented feminine body structure who can harden parts of her skin and quickly heal herself.\nAs a cadet, she teaches Eren some of her melee skills, and later joins the Military Police, where she is seen as the quiet girl.\nFollowing the Battle of Trost after her group deduces Eren, Annie played a role in Marco Bott's death to conceal her group's cover while later using Marco's Gear to personally kill the captive Titans Sawney and Bean Annie later assumes her Titan form to ambush the 57th expedition to Wall Maria while searching for Eren, using the intel Reiner secretly gave her to briefly capture him while killing off Levi's special operations squad.\nAnnie is outed during the Stohess District storyline once Armin deduces that she killed Sonny and Bean.\nFollowing her defeat, Annie encases herself in crystal to prevent further probing as to her motives.\nBut Annie would be revived a few years later when Eren uses the Founding Titan's power to undo all hardened Titans on Paradis.",
+  "metadata": {
+    "source_file": "Annie.txt",
+    "traits":["smart", "ruthless", "mysterious"],
+    "archetype": "the fighter",
+    "narrative_function": "side character",
+    "significant_locations": ["Shiganshina", "Marley"]
+  }
+}

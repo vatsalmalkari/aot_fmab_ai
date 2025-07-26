@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 25",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "25",
+  "arc": "belly of the beast arc",
+  "key_events": ["Edward and Envy fight in Gluttony belly", "Alphonse and Gluttony go to Father", "Envy started Ishval war", "Mustang loses his squad"],
+  "featured_characters": ["Envy", "Alphonse", "Edward", "Gluttony", "Hawkeye", "Mustang"],
+  "content": "Edward and Ling find themselves in an endless dark cavern and assume they are inside Gluttony's stomach. May misses her companion Shao Mei, explaining how their circumstances brought them together, so Scar decides to help search for the panda. Edward and Ling find Envy who explains that there is no exit from the cavern and that Gluttony was a failed attempt by Father at recreating the Gate of Truth. Envy then reveals that he was the one who started the Ishval civil war. Edward angrily attacks him, but Envy transforms into his real form, a giant beast. In Central, the Führer isolates Mustang by transferring his staff to various military command headquarters and assigning Hawkeye as his personal assistant, effectively making her his hostage. Meanwhile, Alphonse convinces Gluttony to take him to Father, who is apparently in Central.",
+  "metadata": {
+    "source_file": "episode_25.txt",
+    "themes": ["loss", "grief", "anger"]
+  }
+}

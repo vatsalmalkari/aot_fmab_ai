@@ -1,0 +1,20 @@
+{
+  "name": "Mustang",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Colonel Mustang", "Flame Alchemist", "Roy Mustang"],
+  "gender": "male",
+  "affiliations": ["State Military", "Central Command"],
+  "family_members": [],
+  "key_relationships": ["Riza Hawkeye", "Maes Hughes", "Havoc", "Berthold Hawkeye"],
+  "abilities": ["Flame alchemy", "Leadership", "Combat skills"],
+  "status": "alive",
+  "content": "Colonel/Major Roy Mustang, the \"Flame Alchemist\", is a State Alchemist and Edward's direct superior.\nHe is promoted to Brigadier General at the end of the series and is a General in the epilogue.\nHe aims towards becoming the next Führer of Amestris, heavily relying on the support of his loyal subordinates to propel him along that path.\nMustang finds this path interrupted by the murder of his best friend and confidant, Maes Hughes; afterward, he begins an almost behind-the-scenes investigation into finding the true culprit.",
+  "metadata": {
+    "source_file": "Mustang.txt",
+    "traits": ["intelligence", "fearless", "leader"],
+    "archetype": "the courages General",
+    "narrative_function": "side character",
+    "significant_locations": ["Central city", "Ishvalan village"]
+  }
+}

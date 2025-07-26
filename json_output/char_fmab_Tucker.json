@@ -1,0 +1,20 @@
+{
+    "name": "Tucker",
+    "anime": "fmab",
+    "type": "character",
+    "aliases": ["Sewing life Alchemist"],
+    "gender": "male",
+    "affiliations": ["State military", "State Alchemist"],
+    "family_members": ["Nina Tucker", "Alexander the Dog"],
+    "key_relationships": ["Nina Tucker", "Alexander the Dog"],
+    "abilities": ["Alchemy", "intelligence"],
+    "status": "dead",
+    "content": "Major Shou Tucker, the Sewing-Life Alchemist, is a bio-alchemist who excels in the creation of chimeras and became a State Alchemist by creating a talking chimera which starved itself to death shortly after its creation. Prior to his certification, he and his family were left in poverty that his wife left him two years ago, leaving only him and his daughter Nina. The Elric brothers first visit his residence to find information on chimeric alchemy after confronting a chimera on their previous adventures as a way to restore their bodies. After meeting Tucker and returning to further their studies, they learn during their third visit that the talking chimera was actually his wife fused with another animal when they discover a second one Tucker created by fusing his daughter, Nina, with his pet Pyrenean Mountain Dog Alexander in order to maintain his position as State Alchemist. When confronted, Tucker expresses no remorse for his actions while justifying them from a scientific point of view, leaving a mortified Edward with a painful lesson. After being beaten to within an inch of his life by Edward and placed under house arrest for his actions, Tucker is later confronted and executed by Scar along with the Nina-Alexander hybrid.",
+    "metadata": {
+      "source_file": "Tucker.txt",
+      "traits": ["merciless", "unethical", "unremorseful", "sadistic"],
+      "archetype": ["the state alchemist"],
+      "narrative_function": "villain",
+      "significant_locations": ["East city", "Central city", "Amestris"]
+    }
+  }

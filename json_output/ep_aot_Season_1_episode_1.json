@@ -1,0 +1,15 @@
+{
+  "title": "Attack on Titan Season 1 Episode 1",
+  "anime": "aot",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "1",
+  "arc": " The Fall of Shiganshina",
+  "key_events": ["The Colossal Titan breaches Wall Maria", "Eren's mother is eaten by a Titan"],
+  "featured_characters": ["Eren Jaeger", "Mikasa Ackerman", "Armin Arlert", "Carla Jaeger", "Hannes"],
+  "content": "For over a century, humans have been living in settlements surrounded by three 50-meter gigantic walls, Wall Maria, Wall Rose and Wall Sina, which prevent the Titans, giant humanoid creatures who eat humans, from entering.\nEren Jaeger, of the town called the Shiganshina District, wishes to see the outside world by joining the Scout Regiment, as he likens living in the cities to being like livestock.\nHis resolve impresses his father Grisha Jaeger, who promises to show him what lies in their basement once he returns.\nThings change when the Colossal Titan, a giant 60-meter Titan taller than regular ones, appears and destroys the gate, allowing smaller Titans to enter.\nAs the town erupts into mass panic, Eren and his friend Mikasa Ackerman find Eren's mother Carla Jaeger pinned under their collapsed house.\nA Smiling Titan approaches and Carla begs them to flee.\nCity guard Hannes promises Carla to protect the kids.\nAs he flees carrying them, Eren watches in horror as the Smiling Titan eats his mother.",
+  "metadata": {
+    "source_file": "Season_1_episode_1.txt",
+    "themes": ["survival", "loss", "humanity's struggle against Titans"]
+  }
+}

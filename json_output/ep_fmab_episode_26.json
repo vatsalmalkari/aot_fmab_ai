@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 26",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "26",
+  "arc": "belly of the beast arc",
+  "key_events": ["Edward and Ling fight Envy", "Bradley tells Mustang his history", "Envy, Edward, Ling escape Gluttony stomach"],
+  "featured_characters": ["Edward", "Ling", "Envy", "Mustang", "Bradley"],
+  "content": "Edward and Ling face off against Envy.\nEdward hesitates to attack, due to the many people embedded into Envy's body and is swallowed.\nMeanwhile, Scar and May find Shao Mei with Alphonse and Gluttony.\nThey follow them into a tunnel where they are forced to fight off several chimeras.\nEdward spots Envy's philosopher's stone and, combined with the missing piece from the ruins of Xerxes he found in Gluttony's stomach, he plans a way to escape with Envy's help.\nMeanwhile, Bradley explains to Mustang how he was trained from birth for leadership and was injected with the philosopher's stone making him a homunculus.\nInside Gluttony, Edward reluctantly uses the souls inside the stone to transmute himself and open the Gate of Truth for Ling and Envy to escape.\nAt the Gate, Edward finds Alphonse's emaciated body but is unable to bring it back, since it is not his.\nHowever, before the gate closes, he yells that he will come back to get him someday.",
+  "metadata": {
+    "source_file": "episode_26.txt",
+    "themes": ["teamwork", "loss", "truth", "depression"]
+  }
+}
