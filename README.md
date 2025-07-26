@@ -3,7 +3,7 @@ title: Anime QA with RAG
 emoji: 🚀
 colorFrom: blue
 colorTo: green
-sdk_version: '3.0'
+sdk_version: "3.0"
 app_file: app.py
 pinned: true
 short_description: a rag model that answers aot & fmab questions
