@@ -1,3 +1,9 @@
+---
+title: Anime QA with RAG
+emoji: 🚀
+colorFrom: blue
+colorTo: green
+---
 # aot_fmab_ai
 Hi everyone this is a Anime QA with Retrieval-Augmented Generation (RAG).
 
