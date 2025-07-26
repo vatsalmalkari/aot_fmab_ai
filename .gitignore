@@ -28,3 +28,4 @@ __pycache__/
 
 # Ignore all large binaries you track with LFS, or ignore folders with large data
 # If you want to keep these in repo with LFS, don’t ignore them here
+aot_fmab_db/
