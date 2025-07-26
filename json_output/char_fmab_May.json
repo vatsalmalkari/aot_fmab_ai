@@ -1,0 +1,20 @@
+{
+  "name": "May",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Princess May Chang", "May Chang"],
+  "gender": "female",
+  "affiliations": ["Chang Clan", "Xing"],
+  "family_members": [],
+  "key_relationships": ["Scar", "Alphonse Elric", "Shao Mei"],
+  "abilities": ["Alkahestry", "Transmutation circles", "Throwing knives"],
+  "status": "alive",
+  "content": "May Chang is the seventeenth princess of Xing who represents the Chang clan.\nUnlike Ling Yao, she comes to Amestris without any bodyguards due to her clan's poor status, only having her small pet panda, Xiao Mei that had gotten a disease to keep her from growing, keeping her small, to keep her company.\nMay is particularly skilled in alkahestry by using throwing knives to create two transmutation circles, one at her intended target and one near herself, allowing her to manipulate matter at a distance.\nShe is somewhat imaginative in nature; having imagined Edward Elric as a tall and handsome young man before actually meeting him and proclaiming that he intentionally misled her.\nMay later falls in love with Alphonse Elric, also picturing his real form as a handsome man.\nSoon after arriving in Amestris on her search for immortality, May teams up with Scar, assisting him on his travels.\nFor a time, she also unknowingly fights the Elric brothers before eventually teaming up with Alphonse, who she developed feelings for, to capture Envy and bring the weakened homunculus to Xing.\nHowever, her guilt manipulated by Envy, May resolves to help her friends in Central City.\nAfter Father's defeat, relieved upon hearing of her half brother's intentions as emperor, May returns to Xing alongside Ling and Lan Fan.",
+  "metadata": {
+    "source_file": "May.txt",
+    "traits": ["lovely", "resourceful", "brave"],
+    "archetype": "the determined princess",
+    "narrative_function": " supporting character",
+    "significant_locations": ["Central city", "Xing", "Amestris"]
+  }
+}

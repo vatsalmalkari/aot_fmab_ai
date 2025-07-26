@@ -1,0 +1,20 @@
+{
+  "name": "Jean",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Jean Kirstein"],
+  "gender": "male",
+  "affiliations": ["Survey Corps", "104th Training Corps"],
+  "family_members": [],
+  "key_relationships": ["Connie Springer", "Marco Bott", "Sasha Blouse", "Eren Yeager"],
+  "abilities": ["Combat Skills", "Leadership"],
+  "status": "",
+  "content": "A hot-headed young man who speaks his mind, he initially planned to join the Military Police in order to live safely within Wall Sheena and manages to graduate within the top ten of his class, ranking sixth.\nHe and Eren have opposing ideals; Jean thinks Eren is suicidal for wanting to join the Survey Corps and fight on the front lines, and has a simmering rivalry with him.\nIn the battle of Trost, he leads a group of recruits to preserve the safety of the supply house, but is shaken that his decision led to the deaths of some of his comrades.\nAfter his close friend Marco dies, he changes his mind about joining the Military Police and joins the Survey Corps instead.\nJean later rises to become a commanding officer in the Survey Corps, and leads ground operations during the Raid on Liberio.\nHe later intensely struggles with whether or not to stop the Rumbling or accept it and enjoy life in the Interior, but chooses to abandon his dream for the sake of saving the world, as he doesn't want his fallen comrades, particularly Marco, to be disappointed in him.\nJean later joins the Alliance in the Battle of Heaven and Earth, fighting alongside Pieck and Connie, and becomes one of the final survivors of the series.\nHe becomes an ambassador of peace of the Alliance.\nIsayama has said that Jean was one of his favorite characters because he says what he thinks.\nJean also harbors jealousy toward Eren because of Jean's apparent infatuation with Mikasa; it is heavily implied that Jean has a crush on Mikasa.",
+  "metadata": {
+    "source_file": "Jean.txt",
+    "traits": ["kind","hot-headed", "loyal"],
+    "archetype": "",
+    "narrative_function": "",
+    "significant_locations": ["Wall Sheena", "Trost District", "Liberio"]
+  }
+}

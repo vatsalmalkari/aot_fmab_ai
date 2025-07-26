@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 35",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "35",
+  "arc": "briggs arc",
+  "key_events": ["underground transmutation circle discovery", "subdue sloth", "general Raven gives information"],
+  "featured_characters": ["Olivier", "Alphonse", "Edward", "May", "Sloth", "Raven"],
+  "content": "Olivier Armstrong(Louis Armstrong's sister) and her crew manage to subdue Sloth by dousing him in fuel and forcing him outside to freeze.\nOlivier then has the Elric brothers arrested so she can learn more about the homunculus.\nGeneral Raven visits Kimblee in hospital, who secretly has two philosopher's stones, and brings along another state alchemist to heal his wounds.\nMeanwhile, Marcoh continues to look into alkahestry, with May teaching him how it works.\nEdward, Alphonse, Olivier, Buccaneer, and Falman investigate the tunnel that Sloth used to invade Briggs.\nWhile there, Olivier presses the Elrics for more information.\nEdward and Falman deduce that the tunnel is being used as a giant transmutation circle to connect sites for the creation of a philosopher's stone, and that Amestris was formed for that purpose.\nLater, Olivier talks with Raven, soliciting information about the creation of immortal armies while the others listen in on their conversation.",
+  "metadata": {
+    "source_file": "episode_35.txt",
+    "themes": ["discovery", "secrets", "sacrifice"]
+  }
+}

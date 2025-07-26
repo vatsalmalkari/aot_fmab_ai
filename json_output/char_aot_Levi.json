@@ -1,0 +1,20 @@
+{
+  "name": "Levi",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Captain Levi", "Humanity's Strongest Soldier"],
+  "gender": "male",
+  "affiliations": ["Survey Corps", "Levi Squad"],
+  "family_members": ["Kuchel Ackerman", "Kenny Ackerman"],
+  "key_relationships": ["Erwin Smith", "Eren Yeager", "Mikasa Ackerman", "Hange Zoë"],
+  "abilities": ["Combat Skills", "Vertical Maneuvering Equipment Proficiency", "Thunder Spear Mastery", "Titan Combat Proficiency"],
+  "status": "alive",
+  "content": "He is known as humanity's strongest soldier and head of an elite squad in the Survey Corps.\nHange remarks that he is a bit of a \"clean freak\".\nWhile it is said that he is blunt and unapproachable, it is noted that he has a strong respect for authority, structure and discipline.\nThe side story Attack on Titan: No Regrets focuses on Levi's origins, revealing that he was part of a band of thieves using the Vertical Maneuvering Equipment to commit crimes before he is scouted by Erwin to join the army.\nCaptain Kenny Ackerman later notes that the capture of Eren and Historia has to do with Levi, whom he refers to as \"Levi Ackerman\".\nKenny is later revealed to be Levi's maternal uncle, who raised him after his mother Kuchel's death.\nLevi becomes a mentor to Eren and his friends and often guides and fights alongside them.\nAfter Erwin's death at the hands of Zeke Jaegar, Levi resolves to hunt him down, and each time they have an encounter, Levi defeats him every time.\nThey even formed an uneasy alliance to deceive Marley.\nLater, Levi is injured by an explosion engineered by Zeke.\nHe was in a near-death state until Hange Zoe found him and escaped with his body later to make an alliance with Commander Theo Magath and Pieck Finger in order to take down Eren Jaeger, with the loss of his eye, fingers, and legs, rendering him paralyzed.\nEventually, Levi recovers and joins the others in battle, managing to kill Zeke, fulfilling his promise to Erwin in killing the Beast Titan, becoming one of the final survivors of the series.",
+  "metadata": {
+    "source_file": "Levi.txt",
+    "traits": ["clean freak", "brave", "stoic"],
+    "archetype": "the Captain",
+    "narrative_function": "main character",
+    "significant_locations": ["Underground City", "Troost District", "Liberio", "Shiganshina District"]
+  }
+}

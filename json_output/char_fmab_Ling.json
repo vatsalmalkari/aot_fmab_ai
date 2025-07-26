@@ -1,0 +1,20 @@
+{
+  "name": "Ling",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Prince Ling Yao", "Ling Yao"],
+  "gender": "male",
+  "affiliations": ["Yao Clan", "Xing"],
+  "family_members": [],
+  "key_relationships": ["Edward Elric", "Lan Fan", "Fu", "Greed"],
+  "abilities": ["Swordsmanship", "Alchemy", "Immortality (as Greed)"],
+  "status": "alive",
+  "content": "Ling Yao is the twelfth prince of Xing, and represents the Yao Clan.\nHe meets Edward Elric soon after arriving in Amestris, whom he aggravates by being both younger and taller than him.\nHe also tends to leave Edward with pricey dinner bills before quietly slipping away.\nDespite his laid-back, goofy, and undignified personality, Ling is a skilled swordsman who keeps a cool head in hostile situations.\nHis major ambition is to replace his father as Xing's new emperor, and as such operates under the belief that power cannot be obtained without the people's support.\nHe is very close to his bodyguards, Lan Fan and Fu, often showing greater concern for their safety than finding immortality and becoming emperor.\nThroughout the series, Ling's ongoing search for immortality in Amestris results in numerous encounters with the homunculi, whom he can sense like other Xingese characters.\nHe eventually becomes a homunculus himself so as to become immortal, relinquishing his body to Greed without any resistance.\nHowever, they eventually come to an agreement to the point where Ling can take control when he feels it is necessary.\nDuring the final battle, Ling becomes a normal human again when Greed transfers himself back into Father's body to weaken him.\nFollowing Father's defeat, having gained a philosopher's stone, Ling returns to Xing and, with the experience he and Lan Fan learned from the people of Amestris, becomes the new emperor with the intent of uniting all the nation's segregated clans under his rule.",
+  "metadata": {
+    "source_file": "Ling.txt",
+    "traits": ["ambitious", "humble", "funny"],
+    "archetype": "the brave prince",
+    "narrative_function": "supporting character",
+    "significant_locations": ["Central city", "Xing", "Amestris"]
+  }
+}

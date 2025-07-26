@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 11",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "11",
+  "arc": "rush valley arc",
+  "key_events": ["Ed, Al, and Winry arrive at rush valley", "Winry helps deliver baby", "They make new friends and leave"],
+  "featured_characters": [],
+  "content": "Edward, Alphonse, and Winry arrive in Rush Valley where Edward's state alchemist pocket watch is stolen by a pickpocket named Paninya.\nAfter chasing her down, they find she has automail legs.\nWinry asks the automail's creator, Dominic LeCoulte, to let her be his apprentice, but her request is swiftly denied.\nWinry convinces Paninya to stop being a pickpocket and return the pocket watch, but first she peeks inside and sees the date when the Elric brothers burned down their house.\nMeanwhile, Dominic's daughter-in-law is having a baby, and she is unable to travel to a hospital in the poor weather.\nWinry and Paninya deliver the baby, resulting in a successful birth.\nWinry asks Dominic again to be an apprentice, and this time he directs her to another automail mechanical engineer.\nWith that, Edward and Alphonse continue onward to Dublith.",
+  "metadata": {
+    "source_file": "episode_11.txt",
+    "themes": ["love", "friendship", "life"]
+  }
+}

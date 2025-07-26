@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 13",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "13",
+  "arc": "dublith arc",
+  "key_events": ["Alphonse finds hidden location", "Greed and his chimeras fight the elrics", "Scar defeats yoki"],
+  "featured_characters": ["Izumi", "Scar", "Greed", "Alphonse", "Edward", "Yoki"],
+  "content": "Edward and Alphonse are expelled by Izumi, now treating them as her equals rather than as students.\nMeanwhile, Mustang announces to his five subordinates that they are all transferring to Central.\nElsewhere, Scar is recovering in an Ishvalan squatter colony and is advised by the elder that pursuing the current state alchemists would not benefit the surviving Ishvalans.\nScar is then accosted by two thugs recruited by Yoki, who wants to take Scar back to Central over the murder of Basque Grand, but he defeats them and leaves the colony.\nIn Dublith, Alphonse is lured to a trap and captured by Roa, Bido, Martel, and Dolcetto, chimera employed by the homunculus Greed.\nEdward finds Greed, who offers to teach him homunculus fabrication in exchange for information about human transmutation.\nEnraged, Edward charges at Greed who uses his ultimate shield to repel Edward's attacks.\nHowever, Edward is able to counterattack by transmuting Greed's ultimate shield.\nIn the midst of the battle, Izumi arrives and intervenes, taking Greed by surprise.",
+  "metadata": {
+    "source_file": "episode_13.txt",
+    "themes": ["mystery", "friendship", "anger"]
+  }
+}

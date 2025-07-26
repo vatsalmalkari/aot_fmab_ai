@@ -1,0 +1,20 @@
+{
+  "name": "Hange",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Hange Zoë"],
+  "gender": "female",
+  "affiliations": ["Survey Corps", "4th Squad", "14th Commander"],
+  "family_members": [],
+  "key_relationships": ["Levi Ackerman", "Erwin Smith"],
+  "abilities": ["Titan Research", "Thunder Spears"],
+  "status": "dead",
+  "content": "Hange is a bespectacled Survey Corps veteran and the leader of 4th Squad.\nA scientist who studies the Titans, Hange shows little fear when interacting with them, and is thus ecstatic when initially meeting Eren.\nHange had a strong hatred against Titans until the discovery of Ilse Langnar's notebook, which provided some new insight into the unknown nature of the Titans.\nHange also invents new special weapons for the Scouts to use, such as a barrel that fires multiple grappling hooks to capture Titans alive, as well as the Thunder Spears, a weapon instrumental to the later successful recapture of Wall Maria.\nIn the aftermath of the battle of Shiganshina, Hange's left eye is lost because of shrapnel caused by the Colossal Titan's transformation and it was later covered up by an eyepatch.\nHange succeeds Erwin as the 14th commander of the Survey Corps.\nFollowing Eren's message to all Subjects of Ymir, Hange forms an alliance with the remaining members of the Survey Corps and the Warriors to stop Eren.\nHange ultimately dies defending the members of the alliance from the Rumbling as they boarded the Azumabitos' flying boat.\nBefore dying from burns and subsequent trampling, Hange successfully eliminates four Colossal Titans.",
+  "metadata": {
+    "source_file": "Hange.txt",
+    "traits": ["selfless", "dedicated", "intelligent"],
+    "archetype": "the Scientist",
+    "narrative_function": "side character",
+    "significant_locations": ["Shiganshina District", "Paradise Island"]
+  }
+}

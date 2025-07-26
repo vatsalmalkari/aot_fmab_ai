@@ -1,0 +1,20 @@
+{
+  "name": "Bradley",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Wrath", "King Bradley", "Fuhrer"],
+  "gender": "male",
+  "affiliations": ["State Military", "Homunculi"],
+  "family_members": ["Selim Bradley", "Mrs. Bradley", "Father", "Envy"],
+  "key_relationships": ["Selim Bradley", "Mrs. Bradley", "Father", "Roy Mustang"],
+  "abilities": ["Ultimate Eye", "Swordsmanship", "Enhanced Strength"],
+  "status": "dead",
+  "content": "Wrath, the Furious, is the true identity of King Bradley, the leader of Amestris's State Military and the leader of Amestris, having the title of Führer President.\nWhile portraying himself as a kind, if laid-back ruler, Bradley ultimately reveals himself to be a hateful and brutal cynic.\nWhile a proficient swordsman, Bradley augments his deadly swordsmanship with the Ultimate Eye, a clairvoyant eye that bears the Ouroboros symbol, which is usually covered by an eyepatch.\nThe eye enables him to predict his opponent's next move to counter along with having far better eyesight superior to the normal human eye.\nBeing the last homunculus to be created by Father at the time of the story's beginning, Bradley was originally a human who was raised trained along with other children to become Amestris' ideal leader.\nWhen he and the others were subjected to Father's Philosopher's Stone being directly injected into their blood system, only Bradley survived despite having dwindled the infused stone down to one soul as a result of his transition into a homunculus though he admitted of not knowing if he retained his original human soul from the ordeal.\nThis resulted with Bradley still aging like a human, a trait that irritates him because his ailing body cannot keep up with the speed of his eye's predictions.\nBecause homunculi cannot reproduce, Bradley was given a family to keep up appearances: his son, Selim Bradley, who is actually his older brother Pride, and a wife he personally chose.\nAfter receiving various wounds while fighting against Buccaneer, Fu and Greed, Bradley fights Scar and taunts Scar for his use of alchemy, but while both men were grievously wounded in battle, Bradley ended up getting the most fatal injuries, with both his arms blown off in the process by Scar.\nUpon his death, Bradley taunts Lan Fan that she should have taken her revenge on him while the opportunity rises, but instead using the opportunity to ask him if he has any regrets.\nAs Bradley's dying body rapidly ages, he concludes that despite his life being entirely controlled by Father, he lived a good life specifically because of humans.",
+  "metadata": {
+    "source_file": "Bradley.txt",
+    "traits": ["cynical", "brutal", "strategic"],
+    "archetype": "the tyrant",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Central City", "Amestris", "Father's Lair"]
+  }
+}

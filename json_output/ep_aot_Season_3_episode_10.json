@@ -1,0 +1,15 @@
+{
+  "title": "Attack on Titan Season 3 Episode 10",
+  "anime": "aot",
+  "type": "episode",
+  "season": "3",
+  "episode_number": "10",
+  "arc": "royal government",
+  "key_events": ["Kenny and Uri Reiss background", "Kenny is Levi's father", "Historia is queen", "Beast Titan says they will find Eren"],
+  "featured_characters": ["Levi","Kenny", "Zeke", "Historia"],
+  "content": "As he lies dying, Kenny Ackerman remembers his unlikely friendship with Uri Reiss years earlier; pledging loyalty to the family after Uri begged Kenny's forgiveness for the Ackermans' persecution; bringing up Levi, his dead sister Kuchel's son, teaching Levi how to survive in the Underground; and leading the clandestine Anti-Personnel Control Squad. Levi asks why Kenny eventually abandoned him as a child. Kenny states that he was not fit to be a parent, and with his dying words, reveals himself as Levi's uncle. Levi is left shaken by the discovery. Kenny hands over the Titan serum he stole from Rod Reiss' bag and dies. In the capital, Historia is officially crowned Queen. The Beast Titan defeats Reiner and tells him and Bertholdt that they will locate the Founder (Eren).",
+  "metadata": {
+    "source_file": "Season_3_episode_10.txt",
+    "themes": ["betrayal, family, legacy, friendship"]
+  }
+}

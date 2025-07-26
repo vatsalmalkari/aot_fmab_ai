@@ -1,0 +1,20 @@
+{
+    "name": "Floch",
+    "anime": "aot",
+    "type": "character",
+    "aliases": ["Floch Forster"],
+    "gender": "male",
+    "affiliations": ["Yeagerist", "Survey corp"],
+    "family_members": [],
+    "key_relationships": ["Erwin Smith", "Eren Yeager"],
+    "abilities": ["Melee Combat", "Thunder Spears"],
+    "status": "dead",
+    "content": "A former 104th Training Corps cadet of the Southern Division and a fellow recruit of Eren's group who joined the Garrison Regiment after graduation (like most of the 104th cadets did). After the Survey Corps's uprising and Historia's coronation, he transferred to the Survey Corps as a new recruit where he questions Jean Kirstein during the feast on the eve of the expedition to Shiganshina District; he rhetorically asks whether Jean thinks the Garrison recruits are reliable since increased propaganda for the Scouts has painted them in a different, more positive light. During the operation to recapture Wall Maria, he was assigned to Squad Klaus along with his two friends Gordon and Sandra. He was the only known survivor in Erwin's suicide charge against the Beast Titan, and was the person who carried the mortally wounded commander back to Shiganshina to regroup with other survivors of the battle. After Erwin eventually succumbed to his injuries, he became one of the only nine survivors of the whole operation (the other eight being Squad Levi and Hange Zoe), and was personally decorated by Queen Historia. However, after learning the truth about the basement in Eren's home, he adopted a more vindictive and hateful attitude towards the people outside the wall (as shown by his total disregard for collateral damage during the Battle of Liberio four years later). He becomes a zealous supporter of Eren who he believes is the Eldian nation's only savior, and leads a faction called the Yeagerists which overthrows the previous government. After Eren's message to all of subjects of Ymir Floch declares that the Yeagerists seized the power over Paradis. When Floch learns about plans of an alliance of 104th Training Corps and Warriors to stop the Rumbling he takes Kiyomi Azumabito hostage in the harbour of Paradis, but stumbles on the alliance' resistance. When the alliance successfully drives away the Marleyan warship with the Azumabito's plane from the harbour, Floch silently sneaks to the plane (or to the ship) and shortly after shoots the plane's cove before getting killed by Mikasa",
+    "metadata": {
+      "source_file": "Floch.txt",
+      "traits":["Manipulative", "ruthless", "brave"],
+      "archetype": "the cult leader",
+      "narrative_function": "side character",
+      "significant_locations": ["Shiganshina"]
+    }
+  }

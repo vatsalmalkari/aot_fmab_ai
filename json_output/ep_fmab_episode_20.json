@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 20",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "20",
+  "arc": "philosopher from the west arc",
+  "key_events": ["Edward finds out you cannot bring back a dead person", "Izumi is relieved after finding out"],
+  "featured_characters": ["Edward", "Izumi", "Hohenheim", "Pinako"],
+  "content": "After arguing with his father, Edward overhears Hohenheim tell Winry's grandmother, Pinako Rockbell that the corpse that Elric brothers had attempted to transmute may not have been their mother.\nHohenheim leaves the next day, warning Pinako that something terrible will happen in Amestris.\nEdward and Pinako dig up the failed transmutation corpse during a downpour and Edward realizes it is not their mother.\nEdward then calls Izumi, asking her to confirm that the child in her transmutation was definitely not hers.\nEdward returns to Central and reunites with Alphonse and Winry, explaining his discoveries.\nIzumi calls Edward, to say the transmuted baby was not hers.\nEdward, Alphonse, and Izumi then feel a sense of relief that they had not killed their loved ones a second time.\nThis confirms Edward's suspicions that it is not possible to revive someone who has died.\nHowever, Edward reassures the others that retrieving someone from beyond the gateway of Truth is still possible and the Elric brothers reaffirm their resolve to return Alphonse to his original body.",
+  "metadata": {
+    "source_file": "episode_20.txt",
+    "themes": ["truth", "love", "mystery"]
+  }
+}

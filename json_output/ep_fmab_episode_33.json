@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 33",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "33",
+  "arc": "briggs arc",
+  "key_events": ["Scar fights Kimblee", "May and Marcoh go to north", "Edward and Alphonse meet Olivier"],
+  "featured_characters": ["Olivier", "Marcoh", "May", "Scar", "Kimblee"],
+  "content": "Kimblee deduces that Scar is headed north.\nHe manages to catch up to the train Scar is riding, only to find his hooded companion is Yoki and not Marcoh.\nScar and Kimblee recognize each other from their encounter in Ishval, and a fight ensues.\nScar impales Kimblee who manages to separate the train carriages and escape.\nMeanwhile, May continues north with Marcoh, while Edward and Alphonse arrive at the mountain path leading to Briggs Fortress.\nThey are attacked by Captain Buccaneer before being surrounded and captured by the guards and taken before Olivier.\nMeanwhile, May and Marcoh manage to find research notes written by Scar's brother and begin to decipher them.",
+  "metadata": {
+    "source_file": "episode_33.txt",
+    "themes": ["revenge", "hope", "mystery"]
+  }
+}

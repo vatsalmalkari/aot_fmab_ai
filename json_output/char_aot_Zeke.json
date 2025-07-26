@@ -1,0 +1,20 @@
+{
+  "name": "Zeke",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Zeke Yeager", "Beast Titan"],
+  "gender": "male",
+  "affiliations": ["Warrior Unit", "Marley Military"],
+  "family_members": ["Grisha Yeager", "Dina Fritz", "Eren Yeager"],
+  "key_relationships": ["Reiner Braun", "Annie Leonhart", "Bertholdt Hoover", "Grisha Yeager"],
+  "abilities": ["Titan Shifting", "Launch objects", "Titan serum control"],
+  "status": "dead",
+  "content": "The warchief of the Marley's Warrior Unit and the holder of the Beast Titan.\nIn his Titan form, Zeke is a 17-meter (56 ft) tall Bigfoot-like creature with long, thin arms which can be used to launch projectiles at long distances.\nDue to belonging to the royal Fritz bloodline, his spinal fluid can also be used to turn other Eldians into Titans completely under his control.\nAdditionally, Zeke is a charismatic leader and proficient strategist who can utilize his subordinates' capabilities to deadly effect on the battlefield.\nHe emerges as one of the series' main antagonists following his introduction in the manga's ninth volume.\nZeke is Grisha Yeager's firstborn son with Dina Fritz, and Eren's older half-brother.\nIndoctrinated since birth to become the Eldian Resistance's vanguard by infiltrating Marley's ranks, Zeke grew to resent his parents for consistently prioritizing their plans of Eldian restoration over his well-being.\nWhen he learns that the Marleyan authorities are closing in on the Eldian Restoration Movement, Zeke betrays his parents to save himself and conceal his identity as a descendant of Karl Fritz.\nAfter inheriting the power of the Beast Titan, he resolves to seize the Founding Titan and use it to \"save\" the Eldian people from further persecution by sterilizing them.\nUpon becoming the Warrior Unit's field commander, Zeke oversees the training of Bertholt, Reiner, and Annie before they are sent to seize the Founding Titan from Paradis.\nFollowing the trio's failure, he leads another Marleyan attack on Paradis.\nAfter infiltrating Wall Rose's interior, he transforms Ragako's residents into Titans and proceeds to terrorize the surrounding population.\nEventually, Zeke makes contact with Reiner and Bertholt and enlists them in an ambush on the Survey Corps as they attempt to seal the breach to Wall Maria and reclaim the city of Shiganshina.\nOnce Eren seals Wall Maria's outer gate, he cuts off part of the Survey Corps south of the inner gate while entrusting Reiner and Bertholt with eliminating the rest of the contingent within Shiganshina.\nDespite all but destroying the Corps' existing roster, he is forced to retreat after Reiner and Bertholt are defeated and he is nearly killed by Levi.\nDuring a five-year period of peace with Paradis Island, Zeke secretly defects to the Paradisians' side while convincing Marley's military leadership to resume their attack on the walls.\nThis is revealed to be a pretext for a surprise attack on an international summit that results in the seizure of the War Hammer Titan and the Marleyan high command's destruction.\nSubsequently, Zeke is briefly detained by the Paradisians before he and Eren incite an insurrection plunging Paradis into chaos.\nDespite initially appearing successful in using Eren to access the Coordinate so he can sterilize all Subjects of Ymir, he learns to his horror that Eren in fact manipulated their father into murdering the Reiss family using the Attack Titan's power and that he plans to use it next to destroy all humanity outside Paradis.\nLamenting his actions that costed people's lives, Zeke allows himself to be killed by Levi.",
+  "metadata": {
+    "source_file": "Zeke.txt",
+    "traits": ["merciless", "selish", "uncaring"],
+    "archetype": "the warrior leader",
+    "narrative_function": "main character's half brother",
+    "significant_locations": ["Marley", "Shiganshina district"]
+  }
+}

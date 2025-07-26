@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 32",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "32",
+  "arc": "briggs arc",
+  "key_events": ["Edward and Alphonse meet Selim", "Marcoh and Scar escape Kimblee"],
+  "featured_characters": ["May Chang", "Scar", "Kimblee", "Alphonse", "Edward", "Selim", "Bradley"],
+  "content": "As May Chang catches a train north with a hooded person, Scar heads west by train with another person.\nGrumman, disguised as a woman, meets Mustang to discuss the current situation and reveals that he saw May at the railway station.\nMustang asks Louis Armstrong to pass the information onto Edward, who is in the library searching for notes on alkahestry.\nLouis Armstrong also gives Edward a letter of introduction to his sister, Major General Olivier Mira Armstrong at Briggs Fortress.\nMeanwhile, Edward and Alphonse accidentally meet the Führer's seemingly naive adopted son, Selim Bradley, and are invited to his house.\nThere, they meet the Führer's wife and are later joined by the Führer himself.\nAfter the meeting, the Elric brothers also catch a train north, following May.\nMeanwhile, Kimblee attacks Scar's train, but Scar and his companion leave the train and travel on by foot, leaving Kimblee to predict Scar's next move.",
+  "metadata": {
+    "source_file": "episode_32.txt",
+    "themes": ["mystery", "friendship", "love"]
+  }
+}

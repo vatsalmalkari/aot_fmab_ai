@@ -1,0 +1,15 @@
+{
+  "title": "Fullmetal Alchemist Brotherhood Episode 12",
+  "anime": "fmab",
+  "type": "episode",
+  "season": "1",
+  "episode_number": "12",
+  "arc": "Dublith arc",
+  "key_events": ["Elric brothers visit their teacher", "she finds out they used human transmutation"],
+  "featured_characters": ["Izumi", "Alphonse", "Edward", "Sig"],
+  "content": "Edward and Alphonse visit their master Izumi and her husband Sig seeking clues on the philosopher's stone.\nDuring their stay, the Elric brothers recall how they first met Izumi during a flooding in Resembool, and how they were formally accepted as Izumi's disciples after she stranded them on an island for a month as a test.\nThey look back at how they figured out the meaning behind \"one is all, all is one\".\nIzumi realizes that the Elric brothers attempted human transmutation by their movements during hand-to-hand combat training.\nRealizing that they had attempted human transmutation Izumi tells the Elrics that she had also broke the taboo to bring back her baby who died during childbirth.\nThe three make up, bonding over the hardships that they had suffered from their attempts at human transmutation.",
+  "metadata": {
+    "source_file": "episode_12.txt",
+    "themes": ["truth", "honesty", "friendship"]
+  }
+}

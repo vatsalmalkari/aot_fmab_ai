@@ -1,0 +1,20 @@
+{
+  "name": "Alphonse",
+  "anime": "fmab",
+  "type": "character",
+  "aliases": ["Alphonse Elric", "Al"],
+  "gender": "male",
+  "affiliations": ["State Military", "Elric Brothers"],
+  "family_members": ["Trisha Elric", "Hohenheim Elric", "Edward Elric"],
+  "key_relationships": ["Edward Elric", "Winry Rockbell", "May Chang"],
+  "abilities": ["Alchemy", "Enhanced Durability", "Combat Skills"],
+  "status": "alive",
+  "content": "Alphonse Elric is the deuteragonist of the Fullmetal Alchemist series.\nHe is the younger brother of the Fullmetal Alchemist, Edward Elric.\nAl(short for Alphonse) is also a victim of a failed Human Transmutation experiment to bring back his late mother, which ultimately resulted in his brother losing his left leg and right arm and Alphonse his entire body.\n Their mother, Trisha, passed away due to  getting sick with a plague.\nBefore it left completely, Edward managed to alchemically bind Alphonse's soul to a large suit of armour via a blood seal.\nAlphonse spends most of the series in this form which, while incredibly powerful and durable, is also completely unfeeling, unable to do basic things like eat, sleep, or touch.\nTo restore their bodies to their original forms, the brothers end up leaving their hometown of Resembool in search of the legendary Philosopher's Stone, the only known way to get around the law of equivalent exchange.\nFor most the story, Alphonse is 14 years old.",
+  "metadata": {
+    "source_file": "Alphonse.txt",
+    "traits": ["brave", "gentle", "loyal"],
+    "archetype": "main character's brother",
+    "narrative_function": "protagonist",
+    "significant_locations": ["Resembool", "Central City", "Briggs Fortress"]
+  }
+}

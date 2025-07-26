@@ -1,0 +1,15 @@
+{
+  "title": "Attack on Titan Season 2 Episode 1",
+  "anime": "aot",
+  "type": "episode",
+  "season": "2",
+  "episode_number": "1",
+  "arc": "The clash of Titans",
+  "key_events": ["Hange discovers a Titan in Wall Sina", "Erwin's report on Wall Rose breach", "Miche's encounter with the Beast Titan", "Beast Titan talks and takes gear"],
+  "featured_characters": ["Hange Zoë", "Erwin Smith", "Miche Zacharius", "Beast Titan"],
+  "content": "Hange Zoë and her team discover a Titan sealed inside Wall Sina.\nPastor Nick of the Wall Cult urges them to cover it from sunlight with sheets.\nHowever, he refuses to tell Hange why it is there, leading her to suspect that there are more Titans hidden within the walls.\nErwin Smith is informed that Wall Rose was breached by Titans.\nTwelve hours earlier, the rest of the 104th Cadets were stationed at an outpost, unarmed and under suspicion of being Titans, when Titans were seen advancing from the south.\nMiche Zacharius orders them to spread out and inform the nearby villages while he stays behind to delay them.\nMiche is captured by a Beast Titan, which looks apelike and is capable of speaking.\nThe Beast Titan takes Miche's omni-directional mobility gear, curious about it, and leaves him to be eaten by the Titans.",
+  "metadata": {
+    "source_file": "Season_2_episode_1.txt",
+    "themes": ["mystery", "loss", "thriller"]
+  }
+}

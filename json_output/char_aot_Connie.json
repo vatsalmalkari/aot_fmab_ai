@@ -1,0 +1,20 @@
+{
+  "name": "Connie",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Connie Springer"],
+  "gender": "male",
+  "affiliations": ["Survey Corps", "Ragako District"],
+  "family_members": ["mother"],
+  "key_relationships": ["Sasha Blouse", "Jean Kirstein", "Armin Arlert"],
+  "abilities": ["Combat Skills", "Vertical Maneuvering"],
+  "status": "alive",
+  "content": "Connie hails from the Ragako District of Wall Rose.\nHe sports a buzz cut and has an outgoing and upbeat personality, always trying his best to keep his teammates pumped up and not shying away from encounters with Titans.\nHis training instructor describes him as having a good sense of balance and performing well with the vertical maneuvering equipment, but that he also has a slow mind and makes strategic mistakes.\nHe is very close friends with Sasha Blouse.\nHaving ranked eighth in his class, he initially plans to join the Military Police but changes his mind after hearing Eren's speech, and eventually joins the Survey Corps.\nLater, his village is decimated by the Beast Titan and all of its inhabitants are turned into Pure Titans, including his mother.\nConnie ends up kidnapping Falco in an attempt to save his mother, but changes his mind last minute and saves Armin.\nConnie is traumatized when he kills his close friends Daz and Samuel to stop them from blowing up the flying boat.\nHe is turned into a titan in the final battle of Heaven and Earth, but is saved when Eren is killed and is able to reunite with his mother.\nHe is one of the final survivors of the series.\nHe later joins the Alliance as an ambassador of peace.",
+  "metadata": {
+    "source_file": "Connie.txt",
+    "traits": ["loyal", "optimistic", "brave"],
+    "archetype": "the loyal friend",
+    "narrative_function": "side character",
+    "significant_locations": ["Ragako District", "Wall Rose", "Paradise Island"]
+  }
+}

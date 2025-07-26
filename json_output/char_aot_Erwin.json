@@ -1,0 +1,20 @@
+{
+  "name": "Erwin",
+  "anime": "aot",
+  "type": "character",
+  "aliases": ["Erwin Smith", "13th Commander of the Survey Corps"],
+  "gender": "male",
+  "affiliations": ["Survey Corps"],
+  "family_members": ["Mr. Smith"],
+  "key_relationships": ["Levi Ackerman", "Hange Zoë", "Eren Yeager"],
+  "abilities": ["Leadership"],
+  "status": "dead",
+  "content": "The 13th Commander of the Survey Corps, who led the last mission before the fall of Wall Maria, having served the government even after they murdered his father as a child believing it was for the good for the people to conceal the truth of Paradis' establishment.\nHe also made the difficult choices for the benefit of others, which required him to sacrifice the lives of his men to see it through; he has a reputation for gambling everything on unorthodox battle strategies.\nA shrewd, bold and charismatic leader who encourages creative thinking among his subordinates, Erwin developed the Long-Range Scouting Formation, which substantially reduced the Survey Corps' death toll during its expeditions.\nAfter learning of a mole among the military ranks, Erwin concealed this intel from his subordinates while orchestrating the 57th expedition to expose and capture Annie.\nWhen Eren is kidnapped by Bertolt and Reiner, he leads a team to rescue him, having his right arm eaten by a Titan in the occasion.\nOnce learning the government's actions were only for the benefit of the upper class, Erwin stages a bloodless coup d'état to place Historia into power.\nErwin then leads an expedition to Shiganshina to seal the breach on Wall Maria, where he and his forces face the Warrior Titans.\nErwin ends up being mortally wounded after resolving to sacrifice himself and the remaining recruits so Levi can attempt to kill the Beast Titan.\nLevi initially saw injecting Erwin with the Titan serum as the logical choice until realizing that Erwin continually demonized himself on their behalf, deciding to let Erwin die in peace from his injuries when giving Armin the injection.\nEver since then, Levi has been on a hunt for the Beast titan Zeke to fulfill his promise to avenge Erwin.",
+  "metadata": {
+    "source_file": "Erwin.txt",
+    "traits": ["adaptable", "self-sacrificing", "inspirational"],
+    "archetype": "the leader",
+    "narrative_function": ["side character", "mentor"],
+    "significant_locations": ["Shiganshina District", "Paradise Island"]
+  }
+}
