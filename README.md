@@ -3,6 +3,10 @@ title: Anime QA with RAG
 emoji: 🚀
 colorFrom: blue
 colorTo: green
+sdk_version: '3.0'
+app_file: app.py
+pinned: true
+short_description: a rag model that answers aot & fmab questions
 ---
 # aot_fmab_ai
 Hi everyone this is a Anime QA with Retrieval-Augmented Generation (RAG).
