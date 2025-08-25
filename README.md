@@ -16,7 +16,7 @@ This project is a question-answering system for anime fans.
 
 It uses a RAG (Retrieval-Augmented Generation) approach to provide accurate, context-aware answers from anime content — like character bios, episode summaries, and trivia.
 
-Instead of relying on AI to make things up, it first retrieves relevant facts from your own dataset, then uses Google Gemini to generate helpful responses.
+Instead of relying on AI to make things up, it first retrieves relevant facts from a trained dataset, then uses Google Gemini to generate helpful responses.
 
 # Some features
 Semantic Search — Finds the most relevant content using embeddings.
