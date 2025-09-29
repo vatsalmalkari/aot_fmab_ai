@@ -16,7 +16,7 @@ ALL_ANIME_ARCS = []
 ALL_CHARACTER_TRAITS = []
 
 # Configuration
-API_KEY = "AIzaSyBW4QhiPWUloZ1rmgp0X14hO039IygsS1E"
+API_KEY = "Your api key"
 EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
 CHROMA_DB_PATH = "./aot_fmab_db"
 COLLECTION_NAME = "anime_data"
