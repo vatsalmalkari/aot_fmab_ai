@@ -1,31 +1,13 @@
-# Python virtual environment
-venv/
-env/
 __pycache__/
-*.py[cod]
-*$py.class
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
-
-# Byte-compiled / optimized / DLL files
-*.so
-*.dylib
-*.dll
-
-# VSCode settings
-.vscode/
-
-# MacOS files
-.DS_Store
-
-# Logs and databases
-*.log
+*.pyc
+*.pyo
+*.pyd
 *.sqlite3
-
-# Data files (if you want to ignore large data files instead of using LFS)
-# aot_fmab_db/
-
-# Ignore all large binaries you track with LFS, or ignore folders with large data
-# If you want to keep these in repo with LFS, don’t ignore them here
+.venv/
+env/
+venv/
+.DS_Store
+Thumbs.db
+.env
 aot_fmab_db/
+*.log

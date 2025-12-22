@@ -1,0 +1,263 @@
+[
+  {
+    "query": "Who is Edward Elric?",
+    "expected": "Edward Elric is the main protagonist of Fullmetal Alchemist."
+  },
+  {
+    "query": "Summarize Attack on Titan episode 1",
+    "expected": "Episode 1 introduces Eren Yeager, Mikasa, and Armin, and the fall of Shiganshina."
+  },
+  {
+    "query": "What is Fullmetal Alchemist about?",
+    "expected": "Fullmetal Alchemist follows the Elric brothers on their quest to restore their bodies using alchemy."
+  },
+    {
+        "query": "Who are the main characters in Attack on Titan?",
+        "expected": "The main characters include Eren Yeager, Mikasa Ackerman, Armin Arlert, and Levi Ackerman."
+    },
+    {
+        "query": "Describe the Philosopher's Stone in Fullmetal Alchemist.",
+        "expected": "The Philosopher's Stone is a powerful alchemical substance that can amplify alchemical abilities."
+    },
+    {
+        "query": "What is the significance of Titans in Attack on Titan?",
+        "expected": "Titans are giant humanoid creatures that threaten humanity and are central to the plot of Attack on Titan."
+    },
+    {
+        "query": "Explain the concept of alchemy in Fullmetal Alchemist.",
+        "expected": "Alchemy is a scientific technique that allows the transformation of matter, governed by the law of equivalent exchange."
+    },
+    {
+        "query": "What role does the Survey Corps play in Attack on Titan?",
+        "expected": "The Survey Corps is a military branch dedicated to exploring outside the walls and combating Titans."
+    },
+    {
+        "query": "Who is Roy Mustang in Fullmetal Alchemist?",
+        "expected": "Roy Mustang is a high-ranking officer in the Amestrian State Military and a skilled fire alchemist."
+    },
+    {
+        "query": "What are the main themes of Attack on Titan?",
+        "expected": "The main themes include freedom, survival, and the moral complexities of war."
+    },
+    {
+        "query": "How does the concept of equivalent exchange work in Fullmetal Alchemist?",
+        "expected": "Equivalent exchange is the principle that to gain something, something of equal value must be lost."
+    },
+    {
+        "query": "Who is Mikasa Ackerman?",
+        "expected": "Mikasa Ackerman is one of the main characters in Attack on Titan, known for her exceptional combat skills."
+    },
+    {
+        "query": "What is the setting of Fullmetal Alchemist?",
+        "expected": "Fullmetal Alchemist is set in the fictional country of Amestris, which has a mix of early 20th-century technology and alchemy."
+    },
+    {
+        "query": "Describe the relationship between Eren Yeager and Armin Arlert.",
+        "expected": "Eren Yeager and Armin Arlert are childhood friends who share a strong bond and fight together against the Titans."
+    },
+    {
+        "query": "What is the role of Hohenheim in Fullmetal Alchemist?",
+        "expected": "Hohenheim is Edward and Alphonse's father, a skilled alchemist with a mysterious past."
+    },
+    {
+        "query": "What are the different types of Titans in Attack on Titan?",
+        "expected": "There are several types of Titans, including Pure Titans, Abnormal Titans, and the Nine Titan Shifters."
+    },
+    {
+        "query": "Who is Riza Hawkeye?",
+        "expected": "Riza Hawkeye is a lieutenant in the Amestrian State Military and Roy Mustang's trusted aide."
+    },
+    {
+        "query": "What is the significance of the Survey Corps' expeditions?",
+        "expected": "The expeditions are crucial for gathering information about Titans and reclaiming territory from them."
+    },
+    {
+        "query": "Explain the concept of Titan shifters in Attack on Titan.",
+        "expected": "Titan shifters are humans who can transform into Titans and possess unique abilities."
+    },
+    {
+        "query": "What challenges do the Elric brothers face in Fullmetal Alchemist?",
+        "expected": "The Elric brothers face challenges such as finding the Philosopher's Stone, confronting homunculi, and dealing with their own past mistakes."
+    },
+    {
+        "query": "Who is Levi Ackerman?",
+        "expected": "Levi Ackerman is a captain in the Survey Corps, known for his exceptional combat skills and leadership."
+    },
+    {
+        "query": "What is the role of Scar in Fullmetal Alchemist?",
+        "expected": "Scar is a vigilante who targets State Alchemists as revenge for the destruction of his homeland."
+    },
+    {
+        "query": "Describe the military structure in Attack on Titan.",
+        "expected": "The military is divided into three branches: the Garrison, the Military Police, and the Survey Corps."
+    },
+    {
+        "query": "What is the significance of the Walls in Attack on Titan?",
+        "expected": "The Walls protect humanity from Titans and are central to the story's setting and conflicts."
+    },
+    {
+        "query": "Who is Winry Rockbell?",
+        "expected": "Winry Rockbell is a childhood friend of the Elric brothers and a skilled automail mechanic."
+    },
+    {
+        "query": "What is the role of homunculi in Fullmetal Alchemist?",
+        "expected": "Homunculi are artificial humans created through alchemy, often serving as antagonists in the series."
+    },
+    {
+        "query": "How does the story of Attack on Titan explore the theme of freedom?",
+        "expected": "The story explores freedom through the characters' desire to escape the confines of the Walls and live without fear of Titans."
+    }, 
+    {
+        "query": "What is the relationship between Eren Yeager and Mikasa Ackerman?",
+        "expected": "Eren Yeager and Mikasa Ackerman share a deep bond, with Mikasa being fiercely protective of Eren."
+    },
+    {
+        "query": "Who is Father in Fullmetal Alchemist?",
+        "expected": "Father is the main antagonist of Fullmetal Alchemist, the creator of the homunculi and a powerful alchemist."
+    }, 
+    {
+        "query": "What motivates the Survey Corps in Attack on Titan?",
+        "expected": "The Survey Corps is motivated by the desire to reclaim land from Titans and uncover the truth about their existence."
+    },
+    {
+        "query": "Describe the character of Alphonse Elric.",
+        "expected": "Alphonse Elric is Edward's younger brother, whose soul is bound to a suit of armor after a failed alchemical experiment."
+    },
+    {
+        "query": "What is the significance of the Titan serum in Attack on Titan?",
+        "expected": "The Titan serum allows humans to transform into Titans, playing a crucial role in the story's conflicts and character developments."
+    },
+    {
+        "query": "How does Fullmetal Alchemist address the consequences of using alchemy?",
+        "expected": "The series explores the moral and ethical consequences of alchemy, particularly through the Elric brothers' experiences."
+    },
+    {
+        "query": "Who is Envy in Fullmetal Alchemist?",
+        "expected": "Envy is one of the homunculi, known for its shape-shifting abilities and deep-seated hatred for humans."
+    },
+    {
+        "query": "What is the role of the Garrison in Attack on Titan?",
+        "expected": "The Garrison is responsible for maintaining the Walls and protecting the civilian population from Titan attacks."
+    },
+    {
+        "query": "Describe the character of Armin Arlert.",
+        "expected": "Armin Arlert is a strategic thinker and close friend of Eren and Mikasa, known for his intelligence and compassion."
+    },
+    {
+        "query": "What are the main conflicts in Fullmetal Alchemist?",
+        "expected": "The main conflicts include the Elric brothers' quest for the Philosopher's Stone, battles against homunculi, and confronting the military's corruption."
+    },
+    {
+        "query": "Who is Zeke Yeager in Attack on Titan?",
+        "expected": "Zeke Yeager is Eren's half-brother and a key antagonist with the ability to transform into the Beast Titan."
+    },
+    {
+        "query": "What is the significance of the Amestrian State Military in Fullmetal Alchemist?",
+        "expected": "The Amestrian State Military plays a central role in the series, with many characters being members and it being involved in various conflicts."
+    },
+    {
+        "query": "How does Attack on Titan explore the theme of survival?",
+        "expected": "The series delves into survival through the characters' constant struggle against Titans and the harsh realities of their world."
+    },
+    {
+        "query": "Who is Annie Leonhart?",
+        "expected": "Annie Leonhart is a member of the Military Police and a Titan shifter."
+    },
+    {
+        "query": "What is the role of Jean Kirstein in Attack on Titan?",
+        "expected": "Jean Kirstein is a member of the Survey Corps known for his pragmatic approach and leadership skills."
+    },
+    {
+        "query": "Describe the character of Sasha Blouse.",
+        "expected": "Sasha Blouse is a member of the Survey Corps, known for her love of food and exceptional marksmanship."
+    },
+    {
+        "query": "What challenges does the Survey Corps face in their expeditions?",
+        "expected": "The Survey Corps faces challenges such as Titan attacks, harsh environments, and internal conflicts."
+    },
+    {
+        "query": "Who is Connie Springer?",
+        "expected": "Connie Springer is a member of the Survey Corps, known for his loyalty and bravery."
+    },
+    {
+        "query": "What is the significance of Historia Reiss in Attack on Titan?",
+        "expected": "Historia Reiss is the true heir to the throne and plays a crucial role in the political landscape of the series."
+    },
+    {
+        "query": "How does Fullmetal Alchemist explore the theme of redemption?",
+        "expected": "The series explores redemption through characters seeking to atone for their past mistakes and find forgiveness."
+    },
+    {
+        "query": "Who is Gluttony in Fullmetal Alchemist?",
+        "expected": "Gluttony is one of the homunculi, characterized by an insatiable hunger and a childlike demeanor."
+    },
+    {
+        "query": "What is the role of Ymir in Attack on Titan?",
+        "expected": "Ymir is a Titan shifter with a complex backstory and significant influence on Historia Reiss."
+    },
+    {
+        "query": "Describe the character of Bertolt Hoover.",
+        "expected": "Bertolt Hoover is a member of the Military Police and a Titan shifter known for his reserved nature."
+    },
+    {
+        "query": "What are the main motivations of Reiner Braun in Attack on Titan?",
+        "expected": "Reiner Braun is motivated by his mission as a Titan shifter and his internal conflict between his duties and friendships."
+    },
+    {
+        "query": "How does Fullmetal Alchemist address the concept of identity?",
+        "expected": "The series explores identity through characters grappling with their true selves, roles, and the consequences of their actions."
+    },
+    {
+        "query": "Who is Erwin Smith?",
+        "expected": "Erwin Smith is the former commander of the Survey Corps, known for his strategic mind and leadership."
+    },
+    {
+        "query": "What is the significance of the Beast Titan in Attack on Titan?",
+        "expected": "The Beast Titan, controlled by Zeke Yeager, plays a crucial role in the Titans' strategies and battles against humanity."
+    },
+    {
+        "query": "Describe the character of Jean Kirstein.",
+        "expected": "Jean Kirstein is a member of the Survey Corps known for his pragmatic approach and leadership skills."
+    },
+    {
+        "query": "What challenges do the Elric brothers face in Fullmetal Alchemist?",
+        "expected": "The Elric brothers face challenges such as finding the Philosopher's Stone, confronting homunculi, and dealing with their own past mistakes."
+    },
+    {
+        "query": "Who is Levi Ackerman?",
+        "expected": "Levi Ackerman is a captain in the Survey Corps, known for his exceptional combat skills and leadership."
+    },
+    {
+        "query": "What is the role of Scar in Fullmetal Alchemist?",
+        "expected": "Scar is a vigilante who targets State Alchemists as revenge for the destruction of his homeland."
+    },
+    {
+        "query": "Describe the military structure in Attack on Titan.",
+        "expected": "The military is divided into three branches: the Garrison, the Military Police, and the Survey Corps."
+    },
+    {
+        "query": "who is kimblee in fullmetal alchemist?",
+        "expected": "Kimblee, also known as the Crimson Alchemist, is a ruthless State Alchemist known for his love of destruction and chaos."
+    },
+    {
+        "query": "who caused the war of ishval in fullmetal alchemist?",
+        "expected": "The war of Ishval in Fullmetal Alchemist was primarily caused by the Amestrian State Military's aggressive expansion and the actions of certain State Alchemists."
+    },
+    {
+        "query": "what is the 3d maneuver gear in attack on titan?",
+        "expected": "The 3D Maneuver Gear is a specialized equipment used by soldiers in Attack on Titan to navigate and fight Titans using grappling hooks and gas-powered propulsion."
+    },
+    {
+        "query": "what is the elric brothers' ultimate goal in fullmetal alchemist?",
+        "expected": "The Elric brothers' ultimate goal in Fullmetal Alchemist is to find the Philosopher's Stone to restore their bodies after a failed alchemical experiment."
+    },
+    {
+        "query": "who is the main antagonist in attack on titan?",
+        "expected": "The main antagonist in Attack on Titan is often considered to be the Titans themselves, but key human antagonists include Zeke Yeager and Reiner Braun."
+    },
+    {
+        "query": "what is the significance of the basement in fullmetal alchemist?",
+        "expected": "The basement in Fullmetal Alchemist holds crucial information about the Elric brothers' family and the true nature of alchemy, which is key to their quest."
+    }
+
+]

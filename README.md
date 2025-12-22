@@ -1,6 +1,5 @@
 ---
 title: Anime QA with RAG
-emoji: 🚀
 colorFrom: blue
 colorTo: green
 sdk: gradio
@@ -9,33 +8,41 @@ app_file: app.py
 pinned: true
 short_description: a rag model that answers aot & fmab questions
 ---
-# aot_fmab_ai
-Hi everyone this is a Anime QA with Retrieval-Augmented Generation (RAG).
+# AOT & FMAB AI
 
-You can ask any question about the anime attack on titan or fullmetal alchemist brotherhood.
+Hi everyone! This is an **Anime QA system** built with **Retrieval-Augmented Generation (RAG)**.
 
-There are three main options: trivia, summary, or fanfiction.
+You can ask any question about the anime **Attack on Titan (AOT)** or **Fullmetal Alchemist: Brotherhood (FMAB)**.
 
-Use trivia to get answers to quick questions about either anime.
+There are three main response modes:
 
-Summary for an episode, character summary or the plot summary.
+- **Trivia** — Get quick factual answers about characters, episodes, or the anime world.  
+- **Summary** — Receive summaries of episodes, characters, or overall plot.  
+- **Fanfiction** — Generate short fictional stories set in the anime universe.
 
-Fanfiction to make any fictional story up.
+# What This Project Does
 
-# What this project does.
-This project is a question-answering system for anime fans. 
+This project is a **question-answering system for anime fans**. It uses a **RAG approach** to provide accurate, context-aware answers based on curated anime content like:
 
-It uses a RAG (Retrieval-Augmented Generation) approach to provide accurate, context-aware answers from anime content — like character bios, episode summaries, and trivia.
+- Character bios  
+- Episode summaries  
+- Trivia facts  
 
-Instead of relying on AI to make things up, it first retrieves relevant facts from your own dataset, then uses Google Gemini to generate helpful responses.
+Instead of relying purely on AI generation, the system first **retrieves relevant facts** from a pre-built dataset and then uses **Google Gemini** to generate natural, informative responses.
 
-# Some features
-Semantic Search — Finds the most relevant content using embeddings.
+## Key Features
 
-Generative Answers — Uses Gemini to give rich, natural language replies.
+- **Semantic Search** — Finds the most relevant content using embeddings.  
+- **Generative Answers** — Uses Google Gemini to produce rich, natural language replies.  
+- **Multiple Modes** — Supports trivia, summaries, and fanfiction.  
+- **Custom Metadata Filtering** — Filter searches by anime, type (character/episode), and more.  
+- **Fuzzy Matching** — Corrects typos and handles approximate queries intelligently.  
 
-Supports Multiple Modes — Answer trivia, give summaries, or write fan fiction.
+## Getting Started
 
-Custom Metadata Filtering — Search by anime, type (character/episode), and more.
+1. Populate the database with your JSON anime data (episode summaries, character bios, etc.).  
+2. Launch the interactive **Gradio app**.  
+3. Choose your mode (trivia, summary, fanfiction) and ask your question.  
+4. Get accurate and creative AI responses based on your dataset!  
 
-Fuzzy Matching — Smart matching even if you mistype names or titles.
+This project combines **semantic retrieval** and **generative AI** to give fans an interactive, fun, and informative anime experience.

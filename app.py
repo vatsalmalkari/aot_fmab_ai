@@ -1,454 +1,224 @@
-import logging
-import gradio as gr
-import google.generativeai as genai
-import chromadb
-from sentence_transformers import SentenceTransformer
 import os
 import json
-from typing import List, Dict
-from concurrent.futures import ThreadPoolExecutor
-from fuzzywuzzy import process, fuzz
 from functools import lru_cache
+from typing import List
+import gradio as gr
+import chromadb
+from sentence_transformers import SentenceTransformer
+import google.generativeai as genai
+from dotenv import load_dotenv
+from rapidfuzz import process
 
-ALL_CHARACTER_NAMES = []
-ALL_EPISODE_TITLES = []
-ALL_ANIME_ARCS = []
-ALL_CHARACTER_TRAITS = []
+load_dotenv()  # Loads API key
 
-# Configuration
-API_KEY = "AIzaSyBW4QhiPWUloZ1rmgp0X14hO039IygsS1E"
-EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
+# Config / Paths
+EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 CHROMA_DB_PATH = "./aot_fmab_db"
-COLLECTION_NAME = "anime_data"
 JSON_DATA_DIR = "./json_output"
-MAX_CONTEXT_LENGTH = 1500
+genai.configure(api_key=os.getenv("API_KEY"))
 
-# Initialize logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Initialize models
+FLASH_MODEL = "gemini-2.5-flash"
+LITE_MODEL = "gemini-2.5-flash-lite"
 
-def initialize_components():
-    """Initialize all required components with error handling"""
-    components = {}
-    
-    try:
-        genai.configure(api_key=API_KEY)
-        components['gemini_model'] = genai.GenerativeModel('gemini-1.5-flash')
-        logging.info("Gemini model initialized successfully")
-    except Exception as e:
-        logging.error(f"Gemini initialization error: {str(e)}")
-        components['gemini_model'] = None
+flash_model = genai.GenerativeModel(FLASH_MODEL)
+lite_model = genai.GenerativeModel(LITE_MODEL)
 
-    try:
-        components['embedding_model'] = SentenceTransformer(EMBEDDING_MODEL_NAME)
-        logging.info("Embedding model loaded successfully")
-    except Exception as e:
-        logging.error(f"Embedding model error: {str(e)}")
-        components['embedding_model'] = None
+def get_model(use_lite: bool = False):
+    return lite_model if use_lite else flash_model
 
-    try:
-        components['chroma_client'] = chromadb.PersistentClient(path=CHROMA_DB_PATH)
-        logging.info("ChromaDB client initialized successfully")
-    except Exception as e:
-        logging.error(f"ChromaDB client error: {str(e)}")
-        components['chroma_client'] = None
+# Initialize embeddings & DB
+embedding_model = SentenceTransformer(EMBEDDING_MODEL)
+chroma_client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
+collection = chroma_client.get_or_create_collection(name="anime_data")
 
-    return components
-
-components = initialize_components()
-
-@lru_cache(maxsize=1000)
+@lru_cache(maxsize=100)
 def get_embedding(text: str) -> List[float]:
-    """Get cached embedding for text"""
-    if not components.get('embedding_model'):
-        raise ValueError("Embedding model not available")
-    return components['embedding_model'].encode(text).tolist()
+    return embedding_model.encode(text).tolist()
 
-def setup_chroma_db():
-    """Initialize ChromaDB collection with data"""
-    global ALL_CHARACTER_NAMES, ALL_EPISODE_TITLES, ALL_ANIME_ARCS, ALL_CHARACTER_TRAITS
-    
-    if not components.get('chroma_client'):
-        raise RuntimeError("ChromaDB client not initialized")
+# Cache for fast repeated queries
+response_cache = {}
 
-    try:
-        collection = components['chroma_client'].get_or_create_collection(
-            name=COLLECTION_NAME,
-            metadata={"hnsw:space": "cosine"}
-        )
-        logging.info(f"Collection '{COLLECTION_NAME}' accessed")
-    except Exception as e:
-        logging.error(f"Collection error: {str(e)}")
-        raise
+# Helper: split text into chunks
+def chunk_text(text, max_length=500):
+    words = text.split()
+    chunks, current = [], []
+    for word in words:
+        if len(" ".join(current + [word])) <= max_length:
+            current.append(word)
+        else:
+            chunks.append(" ".join(current))
+            current = [word]
+    if current:
+        chunks.append(" ".join(current))
+    return chunks
 
-    if collection.count() == 0:
-        logging.info(f"Populating ChromaDB collection '{COLLECTION_NAME}'")
-        documents, metadatas, ids = [], [], []
-        temp_data = {
-            'characters': set(),
-            'episodes': set(),
-            'arcs': set(),
-            'traits': set()
+# Populates ChromaDB
+def process_json_files(json_dir: str):
+    if collection.count() > 0:
+        print("ChromaDB already populated.")
+        return
+
+    print("Populating ChromaDB with embeddings...")
+    documents, metadatas, ids = [], [], []
+
+    for file in os.listdir(json_dir):
+        if not file.endswith(".json"):
+            continue
+        with open(os.path.join(json_dir, file), 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        metadata = {
+            "name": data.get("name", ""),
+            "anime": data.get("anime", ""),
+            "type": data.get("type", ""),
+            "source_file": data.get("metadata", {}).get("source_file", "")
         }
 
-        for root, _, files in os.walk(JSON_DATA_DIR):
-            for file in files:
-                if file.endswith('.json'):
-                    try:
-                        with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
-                            data = json.load(f)
-                        
-                        doc_id = f"{os.path.splitext(file)[0]}_{len(documents)}"
-                        meta = {
-                            'source': file,
-                            'anime': data.get('anime', 'unknown'),
-                            'type': data.get('type', 'unknown'),
-                            **{f"meta_{k}": str(v) for k, v in data.get('metadata', {}).items()}
-                        }
-                        
-                        # Collect metadata
-                        if data['type'] == 'character':
-                            if 'name' in data:
-                                temp_data['characters'].add(data['name'])
-                            if 'aliases' in data:
-                                temp_data['characters'].update(data['aliases'])
-                            if 'metadata' in data and 'traits' in data['metadata']:
-                                temp_data['traits'].update(data['metadata']['traits'])
-                        elif data['type'] == 'episode':
-                            if 'title' in data:
-                                temp_data['episodes'].add(data['title'])
-                            if 'arc' in data:
-                                temp_data['arcs'].add(data['arc'])
-                        
-                        documents.append(data['content'])
-                        metadatas.append(meta)
-                        ids.append(doc_id)
-                    
-                    except Exception as e:
-                        logging.error(f"Error processing {file}: {str(e)}")
+        for i, chunk in enumerate(chunk_text(data.get("content", ""))):
+            documents.append(chunk)
+            metadatas.append(metadata)
+            ids.append(f"{file}_{i}")
 
-        # Update global lists
-        ALL_CHARACTER_NAMES = sorted(list(temp_data['characters']))
-        ALL_EPISODE_TITLES = sorted(list(temp_data['episodes']))
-        ALL_ANIME_ARCS = sorted(list(temp_data['arcs']))
-        ALL_CHARACTER_TRAITS = sorted(list(temp_data['traits']))
-        
-        logging.info(f"Loaded {len(ALL_CHARACTER_NAMES)} characters, {len(ALL_EPISODE_TITLES)} episodes, {len(ALL_ANIME_ARCS)} arcs, {len(ALL_CHARACTER_TRAITS)} traits")
+    batch_size = 32
+    for i in range(0, len(documents), batch_size):
+        batch_docs = documents[i:i+batch_size]
+        batch_metadatas = metadatas[i:i+batch_size]
+        batch_ids = ids[i:i+batch_size]
+        embeddings = embedding_model.encode(batch_docs).tolist()
+        collection.add(
+            documents=batch_docs,
+            metadatas=batch_metadatas,
+            ids=batch_ids,
+            embeddings=embeddings
+        )
+    print("ChromaDB population complete!")
 
-        # Add to ChromaDB
-        if documents:
-            with ThreadPoolExecutor() as executor:
-                embeddings = list(executor.map(get_embedding, documents))
-            collection.add(
-                documents=documents,
-                metadatas=metadatas,
-                embeddings=embeddings,
-                ids=ids
-            )
-            logging.info(f"Added {len(documents)} documents to collection")
-    
-    return collection
+# Fuzzy matching for typos
+all_titles_or_names = []  #from JSON metadata
+def load_titles_and_names():
+    global all_titles_or_names
+    names = set()
+    for file in os.listdir(JSON_DATA_DIR):
+        if not file.endswith(".json"):
+            continue
+        with open(os.path.join(JSON_DATA_DIR, file), 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            names.add(data.get("name", ""))
+            names.add(data.get("anime", ""))
+            if data.get("type") == "episode":
+                names.add(data.get("title", ""))
+    all_titles_or_names = [n for n in names if n]
 
-def _build_where_clause(prompt: str) -> Dict:
-    """Construct optimized where clause based on prompt"""
-    prompt_lower = prompt.lower()
-    conditions = []
-    
-    # Anime detection
-    anime_map = {
-        'aot': ['attack on titan', 'shingeki no kyojin'],
-        'fmab': ['fullmetal alchemist', 'hagane no renkinjutsushi']
+def fix_typo(query, choices=all_titles_or_names, score_cutoff=70):
+    best_match = process.extractOne(query, choices, score_cutoff=score_cutoff)
+    return best_match[0] if best_match else query
+
+# ------------------------------
+# Retrieval
+# ------------------------------
+def retrieve_context(prompt, top_k=5):
+    corrected_prompt = fix_typo(prompt)
+    query_embedding = get_embedding(corrected_prompt)
+    results = collection.query(query_embeddings=[query_embedding], n_results=top_k)
+    context_chunks = results['documents'][0] if results['documents'] else []
+    return "\n".join(context_chunks)
+
+# ------------------------------
+# Generate response with RAG + continuation
+# ------------------------------
+def generate_response(prompt: str, use_lite: bool, temperature: float, max_tokens: int,
+                      mode: str, max_iterations: int = 5) -> str:
+    cache_key = (prompt, use_lite, temperature, max_tokens, mode)
+    if cache_key in response_cache:
+        return response_cache[cache_key]
+
+    model = get_model(use_lite)
+    context = retrieve_context(prompt, top_k=5)
+    mode_instructions = {
+        "trivia": "Answer with detailed trivia facts about the anime using the context below:",
+        "fanfiction": "Write a detailed fanfiction scene based on the anime using the context below:",
+        "summary": "Provide a concise summary of the anime content using the context below:"
     }
-    for anime_id, terms in anime_map.items():
-        if any(term in prompt_lower for term in terms):
-            conditions.append({'anime': anime_id})
-            break
-    
-    # Document type
-    type_indicators = {
-        'episode': ['episode', 'ep ', 'season'],
-        'character': ['character', 'who is', 'tell me about']
-    }
-    for doc_type, indicators in type_indicators.items():
-        if any(ind in prompt_lower for ind in indicators):
-            conditions.append({'type': doc_type})
-            break
-    
-    # Fuzzy matching
-    match_config = [
-        (ALL_CHARACTER_NAMES, 80, ['name', 'aliases']),
-        (ALL_EPISODE_TITLES, 75, ['title']),
-        (ALL_ANIME_ARCS, 70, ['arc'])
-    ]
-    
-    for values, threshold, fields in match_config:
-        match = process.extractOne(prompt_lower, values, scorer=fuzz.token_set_ratio)
-        if match and match[1] >= threshold:
-            conditions.append({'$or': [{f: match[0]} for f in fields]})
-    
-    return conditions[0] if len(conditions) == 1 else {'$and': conditions} if conditions else None
+    prefix = mode_instructions.get(mode, "")
+    full_prompt = f"{prefix}\n\nContext:\n{context}\n\nUser Prompt:\n{prompt}"
 
-def generate_response(prompt: str, mode: str, temperature: float, max_tokens: int) -> str:
-    """Generate response using RAG pipeline without source numbering"""
+    output = ""
+    current_prompt = full_prompt
+
     try:
-        if not components.get('gemini_model'):
-            return "Error: Model not initialized"
-        
-        query_embedding = get_embedding(prompt)
-        where_clause = _build_where_clause(prompt)
-        
-        results = anime_collection.query(
-            query_embeddings=[query_embedding],
-            n_results=5,
-            where=where_clause,
-            include=['documents', 'metadatas', 'distances']
-        )
-        
-        # Format context without source numbering
-        context = "\n".join(
-            f"{doc[:300]}..."  # Just show the content snippet without source info
-            for doc in results['documents'][0]
-        )
-        
-        response = components['gemini_model'].generate_content(
-            f"Mode: {mode}\nContext:\n{context}\nQuestion: {prompt}",
-            generation_config=genai.types.GenerationConfig(
-                temperature=temperature,
-                max_output_tokens=max_tokens,
-                top_p=0.9
-            ),
-            safety_settings={
-                'HARM_CATEGORY_HARASSMENT': 'BLOCK_NONE',
-                'HARM_CATEGORY_HATE_SPEECH': 'BLOCK_NONE',
-                'HARM_CATEGORY_SEXUALLY_EXPLICIT': 'BLOCK_NONE',
-                'HARM_CATEGORY_DANGEROUS_CONTENT': 'BLOCK_NONE'
-            }
-        )
-        return response.text
-    
+        for _ in range(max_iterations):
+            response = model.generate_content(
+                current_prompt,
+                generation_config=genai.types.GenerationConfig(
+                    temperature=temperature,
+                    max_output_tokens=max_tokens,
+                    top_p=0.9
+                )
+            )
+            text_chunk = getattr(response, "text", "")
+            if not text_chunk.strip():
+                break
+            output += text_chunk.strip() + "\n\n"
+            # Continue
+            current_prompt = f"Continue the text from before in the same style and context:\n{text_chunk}"
+
+        output = output.strip()
+        response_cache[cache_key] = output
+        return output
     except Exception as e:
-        logging.error(f"Generation error: {str(e)}")
-        return f"Error generating response: {str(e)}"
+        return f"Error generating response: {e}"
 
-# Initialize ChromaDB
-try:
-    anime_collection = setup_chroma_db()
-    logging.info("ChromaDB setup completed successfully")
-except Exception as e:
-    logging.error(f"Failed to initialize ChromaDB: {str(e)}")
-    raise
+# ------------------------------
+# Test retrieval accuracy
+# ------------------------------
+def evaluate_retrieval_accuracy(top_k=5):
+    test_queries = [
+        {"query": "Who is Edward Elric?", "expected_doc": "Edward Elric is"},
+        {"query": "Attack on Titan episode 1 summary", "expected_doc": "In episode 1"}
+    ]
+    correct = 0
+    for item in test_queries:
+        query = fix_typo(item["query"])
+        embedding = get_embedding(query)
+        results = collection.query(query_embeddings=[embedding], n_results=top_k)
+        retrieved_docs = results['documents'][0] if results['documents'] else []
+        if any(item["expected_doc"] in doc for doc in retrieved_docs):
+            correct += 1
+    accuracy = correct / len(test_queries)
+    return accuracy
 
-# Gradio Interface
-custom_css = """
-:root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --card-bg: #f8f9fa;
-    --border-color: #e0e0e0;
-}
+# ------------------------------
+# Gradio UI
+# ------------------------------
+with gr.Blocks() as app:
+    with gr.Column():
+        prompt_input = gr.Textbox(label="Your Anime Question/Prompt", lines=5)
+        use_lite_checkbox = gr.Checkbox(label="Use Lite Model (Faster)", value=True)
+        temp_slider = gr.Slider(0.0, 1.0, step=0.1, value=0.7, label="Creativity (Temperature)")
+        token_slider = gr.Slider(50, 2048, step=50, value=512, label="Response Length (Max Tokens)")
+        mode_dropdown = gr.Dropdown(
+            choices=["trivia", "fanfiction", "summary"],
+            value="trivia",
+            label="Response Mode"
+        )
+        submit_btn = gr.Button("Generate Response")
+        output_box = gr.Textbox(label="AI Response", lines=18, show_copy_button=True)
 
-.dark {
-    --bg-color: #1a1a1a;
-    --text-color: #f0f0f0;
-    --card-bg: #2d2d2d;
-    --border-color: #444444;
-}
-
-.gradio-container {
-    font-family: 'Helvetica', Arial, sans-serif;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-.welcome-panel {
-    background: linear-gradient(135deg, var(--card-bg) 0%, #c3cfe2 100%);
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    border: 1px solid var(--border-color);
-}
-
-.instructions {
-    background: var(--card-bg);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 15px 0;
-    border: 1px solid var(--border-color);
-}
-
-.param-card {
-    background: var(--card-bg);
-    padding: 18px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin: 12px 0;
-    border: 1px solid var(--border-color);
-}
-
-#aot-logo, #fmab-logo {
-    border-radius: 10px;
-    border: 2px solid var(--border-color);
-    margin-right: 15px;
-    height: 220px !important;
-    width: 220px !important;
-    object-fit: contain;
-}
-
-.image-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.dark #aot-logo,
-.dark #fmab-logo {
-    border-color: #555;
-}
-"""
-
-with gr.Blocks(css=custom_css, theme=gr.themes.Soft()) as app:
-    # ========== HEADER SECTION ==========
-    with gr.Column(elem_classes="welcome-panel"):
-        gr.Markdown("""
-        #  Anime GPT: AOT & FMAB Expert
-        *Your ultimate assistant for Attack on Titan and Fullmetal Alchemist Brotherhood knowledge*
-        """)
-        
-        with gr.Accordion("How to Use This GPT", open=False):
-            gr.Markdown("""
-            ###  This assistant specializes in:
-            - **Trivia Answers**: "Who is the Armored Titan?"  
-            - **Episode Summaries**: "What happened in FMAB Episode 19?"  
-            - **Fan Fiction**: "What if Eren and Edward met?"  
-            - **Character Analysis**: "Compare Levi and Roy Mustang's leadership styles"  
-            - **Theories & Discussions**: "Explain the philosophical themes in AOT"  
-            """)
-            
-            with gr.Row(elem_classes="image-row"):
-                aot_img = gr.Image(
-                    value="images/aot_poster.png",
-                    show_label=False,
-                    elem_id="aot-logo",
-                    interactive=False
-                )
-                fmab_img = gr.Image(
-                    value="images/fmab_poster.png",
-                    show_label=False,
-                    elem_id="fmab-logo",
-                    interactive=False
-                )
-                
-    # ========== MAIN INTERFACE ==========
-    with gr.Row(equal_height=True):
-        # ===== INPUT COLUMN =====
-        with gr.Column(scale=2):
-            # Input Section
-            with gr.Group():
-                prompt = gr.Textbox(
-                    label=" Your Anime Question/Prompt",
-                    placeholder="Examples:\n"
-                    "- 'Explain Zeke's euthanasia plan'\n"
-                    "- 'Write a story where Edward meets Levi'\n"
-                    "- 'Compare the homunculi to the Titans'\n"
-                    "- 'Summarize the Battle of Shiganshina'",
-                    lines=5,
-                    max_lines=8,
-                    elem_id="prompt-box"
-                )
-                
-            # Mode Selection
-            with gr.Group():
-                mode = gr.Radio(
-                    choices=[
-                        (" Trivia Mode (Factual Answers)", "trivia"),
-                        (" Summary Mode (Episode/Character Overview)", "summary"),
-                        (" Fan Fiction Mode (Creative Stories)", "fan_fiction")
-                    ],
-                    label=" Response Type",
-                    value="trivia",
-                    elem_classes="radio-buttons"
-                )
-            
-            # Advanced Settings
-            with gr.Accordion(" Advanced Settings", open=False):
-                with gr.Row():
-                    with gr.Column():
-                        temp = gr.Slider(
-                            label=" Creativity (Temperature)",
-                            minimum=0.0, maximum=1.0, step=0.1, value=0.7,
-                            info="Lower = More factual, Higher = More creative"
-                        )
-                    with gr.Column():
-                        tokens = gr.Slider(
-                            label=" Response Length (Max Tokens)",
-                            minimum=50, maximum=2048, step=50, value=512,
-                            info="1 token ≈ 1 word (512 ≈ 400 words)"
-                        )
-            
-            submit_btn = gr.Button(
-                "Generate Response ", 
-                variant="primary",
-                elem_id="submit-btn"
-            )
-            
-            gr.Markdown("""
-            <div style="text-align: center; margin-top: 10px;">
-            <small>Tip: For best results, be specific with your questions!</small>
-            </div>
-            """)
-
-        # ===== OUTPUT COLUMN =====
-        with gr.Column(scale=3):
-            # Output Section
-            output = gr.Textbox(
-                label="🤖 AI Response",
-                placeholder="Your generated response will appear here...",
-                lines=18,
-                elem_id="output-box",
-                show_copy_button=True
-            )
-            
-            with gr.Row():
-                clear_btn = gr.Button("Clear", variant="secondary")
-                regenerate_btn = gr.Button("Regenerate", variant="secondary")
-                copy_btn = gr.Button("Copy to Clipboard", variant="secondary")
-            
-            with gr.Accordion("💡 Response Examples", open=False):
-                gr.Markdown("""
-                **Trivia Example:**  
-                *"The Armored Titan is the form taken by Reiner Braun, one of the Warriors from Marley..."*
-                
-                **Summary Example:**  
-                *"Episode 19 of FMAB, titled 'Death of the Undying', focuses on the battle between the Elric brothers..."*
-                
-                **Fan Fiction Example:**  
-                *"The meeting between Eren Yeager and Edward Elric would likely begin with mutual suspicion. Edward..."*
-                """)
-    
-    # ========== EVENT HANDLERS ==========
     submit_btn.click(
         fn=generate_response,
-        inputs=[prompt, mode, temp, tokens],
-        outputs=output
-    )
-    clear_btn.click(
-        fn=lambda: ("", ""),
-        inputs=None,
-        outputs=[prompt, output]
-    )
-    regenerate_btn.click(
-        fn=generate_response,
-        inputs=[prompt, mode, temp, tokens],
-        outputs=output
-    )
-    copy_btn.click(
-        fn=None,
-        inputs=output,
-        js="() => {navigator.clipboard.writeText(document.getElementById('output-box').value);}"
+        inputs=[prompt_input, use_lite_checkbox, temp_slider, token_slider, mode_dropdown],
+        outputs=output_box
     )
 
+# Main
 if __name__ == "__main__":
-    app.launch(
-        server_name="0.0.0.0",
-        server_port=7860,
-        share=False  
-    )
+    process_json_files(JSON_DATA_DIR)
+    load_titles_and_names()
+    print("ChromaDB loaded and names indexed.")
+
+    # test retrieval accuracy
+    acc = evaluate_retrieval_accuracy(top_k=5)
+    print(f"Test retrieval accuracy: {acc*100:.2f}%")
+
+    app.launch()
