@@ -1,61 +1,64 @@
 import os
 import json
+from glob import glob
+from functools import lru_cache
 from sentence_transformers import SentenceTransformer
 import chromadb
-from functools import lru_cache
+from chromadb.config import Settings
 
-# config
+# Config
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 CHROMA_DB_PATH = "./aot_fmab_db"
 JSON_DIR = "./json_output"
+BATCH_SIZE = 32
+CHUNK_SIZE = 500  # words per chunk
 
-# setup chromadb and model
-model = SentenceTransformer(EMBEDDING_MODEL)
+# Setup ChromaDB
 client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
 collection = client.get_or_create_collection(name="anime_data")
 
-# cached embedding
-@lru_cache(maxsize=100)
-def get_embedding(text):
-    return model.encode(text).tolist()
+# embedding model
+device = "cuda" if os.environ.get("CUDA_VISIBLE_DEVICES") or os.environ.get("USE_GPU") else "cpu"
+embedding_model = SentenceTransformer(EMBEDDING_MODEL, device=device)
 
-# helper to chunk text
-def chunk_text(text, max_length=500):
+# Cache for embeddings
+@lru_cache(maxsize=100)
+def get_embedding(text: str):
+    return embedding_model.encode(text).tolist()
+
+# Chunking function
+def chunk_text(text, max_length=CHUNK_SIZE):
     words = text.split()
     chunks, current = [], []
-
     for word in words:
         if len(" ".join(current + [word])) <= max_length:
             current.append(word)
         else:
             chunks.append(" ".join(current))
             current = [word]
-
     if current:
         chunks.append(" ".join(current))
-
     return chunks
 
-# json population
-def populate_chroma_if_empty():
+# Populate ChromaDB
+def populate_chroma():
     if collection.count() > 0:
         print("ChromaDB already populated. Skipping embedding.")
         return
 
     print("Populating ChromaDB with embeddings...")
+
     documents, metadatas, ids = [], [], []
 
-    for file in os.listdir(JSON_DIR):
-        if not file.endswith(".json"):
-            continue
-        with open(os.path.join(JSON_DIR, file), 'r', encoding='utf-8') as f:
+    for file in glob(os.path.join(JSON_DIR, "*.json")):
+        with open(file, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         metadata = {
             "name": data.get("name", ""),
             "anime": data.get("anime", ""),
             "type": data.get("type", ""),
-            "source_file": data.get("metadata", {}).get("source_file", "")
+            "source_file": os.path.basename(file)
         }
 
         if data.get("type") == "episode":
@@ -65,30 +68,30 @@ def populate_chroma_if_empty():
                 "title": data.get("title", "")
             })
 
-        for i, chunk in enumerate(chunk_text(data.get("content", ""))):
+        # split into chunks
+        content = data.get("content", "")
+        for i, chunk in enumerate(chunk_text(content)):
             documents.append(chunk)
             metadatas.append(metadata)
-            ids.append(f"{file}_{i}")
+            ids.append(f"{os.path.basename(file)}_{i}")
 
-    # Compute embeddings in batches
-    batch_size = 32
-    for i in range(0, len(documents), batch_size):
-        batch_docs = documents[i:i+batch_size]
-        batch_metadatas = metadatas[i:i+batch_size]
-        batch_ids = ids[i:i+batch_size]
+    # embeddings in batches
+    for i in range(0, len(documents), BATCH_SIZE):
+        batch_docs = documents[i:i+BATCH_SIZE]
+        batch_metas = metadatas[i:i+BATCH_SIZE]
+        batch_ids = ids[i:i+BATCH_SIZE]
 
-        embeddings = model.encode(batch_docs).tolist()
+        embeddings = embedding_model.encode(batch_docs).tolist()
 
         collection.add(
             documents=batch_docs,
-            metadatas=batch_metadatas,
+            metadatas=batch_metas,
             ids=batch_ids,
             embeddings=embeddings
         )
 
     print("ChromaDB population complete!")
+    print(f"Total documents in DB: {collection.count()}")
 
-# main execution
 if __name__ == "__main__":
-    populate_chroma_if_empty()
-    print("Loading complete.")
+    populate_chroma()
