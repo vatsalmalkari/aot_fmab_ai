@@ -51,3 +51,7 @@ It lets you ask questions about **Attack on Titan (AOT)** and **Fullmetal Alchem
 python generate_embeddings.py   # Step 1: Populate ChromaDB
 python fastapi.py               # Step 2: Start backend API
 python gradio_app.py            # Step 3: Launch Gradio UI
+```
+**Important**
+Please generate embeddings first before running fastapi or the gradio app
+run generate_embeddings.py
