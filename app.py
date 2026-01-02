@@ -117,20 +117,39 @@ USER:
     return output
 
 # GRADIO UI
-with gr.Blocks() as gr_app:
-    with gr.Column():
-        prompt_input = gr.Textbox(label="Your Anime Question/Prompt", lines=5)
-        use_lite_checkbox = gr.Checkbox(label="Use Lite Model (Faster)", value=True)
-        temp_slider = gr.Slider(0, 1.0, step=0.1, value=0.7, label="Creativity")
-        token_slider = gr.Slider(50, 2048, step=50, value=512, label="Max Tokens")
-        mode_dropdown = gr.Dropdown(
-            choices=["trivia", "fanfiction", "summary"],
-            value="trivia",
-            label="Response Mode"
-        )
-        submit_btn = gr.Button("Generate Response")
-        output_box = gr.Textbox(label="AI Response", lines=18)
+AOT_IMAGE = "images/aot_poster.png"
+FMAB_IMAGE = "images/fmab_poster.png"
 
+with gr.Blocks(css="""
+    body {background-color: #f0f4f8;}
+    .poster {border: 3px solid #555; border-radius: 8px; padding: 5px;}
+""") as gr_app:
+
+    # Top row: Anime posters
+    with gr.Row():
+        gr.Image(AOT_IMAGE, label="Attack on Titan", interactive=False, elem_classes="poster")
+        gr.Image(FMAB_IMAGE, label="Fullmetal Alchemist: Brotherhood", interactive=False, elem_classes="poster")
+    
+    gr.Markdown("### Ask me about AOT or FMAB!", elem_id="header")
+
+    # Input and output area
+    with gr.Row():
+        with gr.Column(scale=3):
+            prompt_input = gr.Textbox(label="Your Question/Prompt", lines=5)
+            use_lite_checkbox = gr.Checkbox(label="Use Lite Model (Faster)", value=True)
+            temp_slider = gr.Slider(0, 1.0, step=0.1, value=0.7, label="Creativity")
+            token_slider = gr.Slider(50, 2048, step=50, value=512, label="Max Tokens")
+            mode_dropdown = gr.Dropdown(
+                choices=["trivia", "fanfiction", "summary"],
+                value="trivia",
+                label="Response Mode"
+            )
+            submit_btn = gr.Button("Generate Response")
+        
+        with gr.Column(scale=4):
+            output_box = gr.Textbox(label="AI Response", lines=18)
+
+    # Connect button
     submit_btn.click(
         generate_rag,
         inputs=[prompt_input, use_lite_checkbox, temp_slider, token_slider, mode_dropdown],
