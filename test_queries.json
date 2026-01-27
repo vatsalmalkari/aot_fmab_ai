@@ -80,184 +80,43 @@
         "expected": "The Elric brothers face challenges such as finding the Philosopher's Stone, confronting homunculi, and dealing with their own past mistakes."
     },
     {
-        "query": "Who is Levi Ackerman?",
-        "expected": "Levi Ackerman is a captain in the Survey Corps, known for his exceptional combat skills and leadership."
+        "query": "Describe the relationship between Gojo Satoru and Geto Suguru in Jujutsu Kaisen.",
+        "expected": "Gojo Satoru and Geto Suguru were once close friends but became enemies due to their differing ideologies about jujutsu sorcery."   
     },
     {
-        "query": "What is the role of Scar in Fullmetal Alchemist?",
-        "expected": "Scar is a vigilante who targets State Alchemists as revenge for the destruction of his homeland."
+        "query": "What is the main plot of Jujutsu Kaisen?",
+        "expected": "Jujutsu Kaisen follows Yuji Itadori as he joins a secret organization to fight curses after ingesting a powerful cursed object."
     },
     {
-        "query": "Describe the military structure in Attack on Titan.",
-        "expected": "The military is divided into three branches: the Garrison, the Military Police, and the Survey Corps."
+        "query": "Who is Yuji Itadori?",
+        "expected": "Yuji Itadori is the protagonist of Jujutsu Kaisen, a high school student who becomes a jujutsu sorcerer."
     },
     {
-        "query": "What is the significance of the Walls in Attack on Titan?",
-        "expected": "The Walls protect humanity from Titans and are central to the story's setting and conflicts."
+        "query": "What are Cursed Spirits in Jujutsu Kaisen?",
+        "expected": "Cursed Spirits are malevolent entities born from human negative emotions that jujutsu sorcerers combat."
     },
     {
-        "query": "Who is Winry Rockbell?",
-        "expected": "Winry Rockbell is a childhood friend of the Elric brothers and a skilled automail mechanic."
+        "query":  "How does Yuji Itadori impact Gojo Satoru's life?",
+        "expected": "Yuji Itadori's presence challenges Gojo Satoru's beliefs and brings new dynamics to his life as a jujutsu sorcerer."
     },
     {
-        "query": "What is the role of homunculi in Fullmetal Alchemist?",
-        "expected": "Homunculi are artificial humans created through alchemy, often serving as antagonists in the series."
+        "query": "What is the significance of Sukuna in Jujutsu Kaisen?",
+        "expected": "Sukuna is a powerful curse residing within Yuji Itadori, playing a central role in the series' plot."
     },
     {
-        "query": "How does the story of Attack on Titan explore the theme of freedom?",
-        "expected": "The story explores freedom through the characters' desire to escape the confines of the Walls and live without fear of Titans."
-    }, 
-    {
-        "query": "What is the relationship between Eren Yeager and Mikasa Ackerman?",
-        "expected": "Eren Yeager and Mikasa Ackerman share a deep bond, with Mikasa being fiercely protective of Eren."
+        "query": "Describe the relationship between Megumi Fushiguro and Nobara Kugisaki.",
+        "expected": "Megumi Fushiguro and Nobara Kugisaki are classmates and fellow jujutsu sorcerers who work together on missions."
     },
     {
-        "query": "Who is Father in Fullmetal Alchemist?",
-        "expected": "Father is the main antagonist of Fullmetal Alchemist, the creator of the homunculi and a powerful alchemist."
-    }, 
-    {
-        "query": "What motivates the Survey Corps in Attack on Titan?",
-        "expected": "The Survey Corps is motivated by the desire to reclaim land from Titans and uncover the truth about their existence."
+        "query": "Why does Gojo love Geto and Yuji so much?",
+        "expected": "Gojo loves Geto and Yuji because they see Gojo as a human not just a sorcerer, valuing his true self beyond his powers."
     },
     {
-        "query": "Describe the character of Alphonse Elric.",
-        "expected": "Alphonse Elric is Edward's younger brother, whose soul is bound to a suit of armor after a failed alchemical experiment."
+        "query": "What makes Gojo Satoru so powerful in Jujutsu Kaisen?",
+        "expected": "Gojo Satoru is powerful due to his mastery of jujutsu techniques, including the Limitless Cursed Technique and the Six Eyes ability."
     },
     {
-        "query": "What is the significance of the Titan serum in Attack on Titan?",
-        "expected": "The Titan serum allows humans to transform into Titans, playing a crucial role in the story's conflicts and character developments."
-    },
-    {
-        "query": "How does Fullmetal Alchemist address the consequences of using alchemy?",
-        "expected": "The series explores the moral and ethical consequences of alchemy, particularly through the Elric brothers' experiences."
-    },
-    {
-        "query": "Who is Envy in Fullmetal Alchemist?",
-        "expected": "Envy is one of the homunculi, known for its shape-shifting abilities and deep-seated hatred for humans."
-    },
-    {
-        "query": "What is the role of the Garrison in Attack on Titan?",
-        "expected": "The Garrison is responsible for maintaining the Walls and protecting the civilian population from Titan attacks."
-    },
-    {
-        "query": "Describe the character of Armin Arlert.",
-        "expected": "Armin Arlert is a strategic thinker and close friend of Eren and Mikasa, known for his intelligence and compassion."
-    },
-    {
-        "query": "What are the main conflicts in Fullmetal Alchemist?",
-        "expected": "The main conflicts include the Elric brothers' quest for the Philosopher's Stone, battles against homunculi, and confronting the military's corruption."
-    },
-    {
-        "query": "Who is Zeke Yeager in Attack on Titan?",
-        "expected": "Zeke Yeager is Eren's half-brother and a key antagonist with the ability to transform into the Beast Titan."
-    },
-    {
-        "query": "What is the significance of the Amestrian State Military in Fullmetal Alchemist?",
-        "expected": "The Amestrian State Military plays a central role in the series, with many characters being members and it being involved in various conflicts."
-    },
-    {
-        "query": "How does Attack on Titan explore the theme of survival?",
-        "expected": "The series delves into survival through the characters' constant struggle against Titans and the harsh realities of their world."
-    },
-    {
-        "query": "Who is Annie Leonhart?",
-        "expected": "Annie Leonhart is a member of the Military Police and a Titan shifter."
-    },
-    {
-        "query": "What is the role of Jean Kirstein in Attack on Titan?",
-        "expected": "Jean Kirstein is a member of the Survey Corps known for his pragmatic approach and leadership skills."
-    },
-    {
-        "query": "Describe the character of Sasha Blouse.",
-        "expected": "Sasha Blouse is a member of the Survey Corps, known for her love of food and exceptional marksmanship."
-    },
-    {
-        "query": "What challenges does the Survey Corps face in their expeditions?",
-        "expected": "The Survey Corps faces challenges such as Titan attacks, harsh environments, and internal conflicts."
-    },
-    {
-        "query": "Who is Connie Springer?",
-        "expected": "Connie Springer is a member of the Survey Corps, known for his loyalty and bravery."
-    },
-    {
-        "query": "What is the significance of Historia Reiss in Attack on Titan?",
-        "expected": "Historia Reiss is the true heir to the throne and plays a crucial role in the political landscape of the series."
-    },
-    {
-        "query": "How does Fullmetal Alchemist explore the theme of redemption?",
-        "expected": "The series explores redemption through characters seeking to atone for their past mistakes and find forgiveness."
-    },
-    {
-        "query": "Who is Gluttony in Fullmetal Alchemist?",
-        "expected": "Gluttony is one of the homunculi, characterized by an insatiable hunger and a childlike demeanor."
-    },
-    {
-        "query": "What is the role of Ymir in Attack on Titan?",
-        "expected": "Ymir is a Titan shifter with a complex backstory and significant influence on Historia Reiss."
-    },
-    {
-        "query": "Describe the character of Bertolt Hoover.",
-        "expected": "Bertolt Hoover is a member of the Military Police and a Titan shifter known for his reserved nature."
-    },
-    {
-        "query": "What are the main motivations of Reiner Braun in Attack on Titan?",
-        "expected": "Reiner Braun is motivated by his mission as a Titan shifter and his internal conflict between his duties and friendships."
-    },
-    {
-        "query": "How does Fullmetal Alchemist address the concept of identity?",
-        "expected": "The series explores identity through characters grappling with their true selves, roles, and the consequences of their actions."
-    },
-    {
-        "query": "Who is Erwin Smith?",
-        "expected": "Erwin Smith is the former commander of the Survey Corps, known for his strategic mind and leadership."
-    },
-    {
-        "query": "What is the significance of the Beast Titan in Attack on Titan?",
-        "expected": "The Beast Titan, controlled by Zeke Yeager, plays a crucial role in the Titans' strategies and battles against humanity."
-    },
-    {
-        "query": "Describe the character of Jean Kirstein.",
-        "expected": "Jean Kirstein is a member of the Survey Corps known for his pragmatic approach and leadership skills."
-    },
-    {
-        "query": "What challenges do the Elric brothers face in Fullmetal Alchemist?",
-        "expected": "The Elric brothers face challenges such as finding the Philosopher's Stone, confronting homunculi, and dealing with their own past mistakes."
-    },
-    {
-        "query": "Who is Levi Ackerman?",
-        "expected": "Levi Ackerman is a captain in the Survey Corps, known for his exceptional combat skills and leadership."
-    },
-    {
-        "query": "What is the role of Scar in Fullmetal Alchemist?",
-        "expected": "Scar is a vigilante who targets State Alchemists as revenge for the destruction of his homeland."
-    },
-    {
-        "query": "Describe the military structure in Attack on Titan.",
-        "expected": "The military is divided into three branches: the Garrison, the Military Police, and the Survey Corps."
-    },
-    {
-        "query": "who is kimblee in fullmetal alchemist?",
-        "expected": "Kimblee, also known as the Crimson Alchemist, is a ruthless State Alchemist known for his love of destruction and chaos."
-    },
-    {
-        "query": "who caused the war of ishval in fullmetal alchemist?",
-        "expected": "The war of Ishval in Fullmetal Alchemist was primarily caused by the Amestrian State Military's aggressive expansion and the actions of certain State Alchemists."
-    },
-    {
-        "query": "what is the 3d maneuver gear in attack on titan?",
-        "expected": "The 3D Maneuver Gear is a specialized equipment used by soldiers in Attack on Titan to navigate and fight Titans using grappling hooks and gas-powered propulsion."
-    },
-    {
-        "query": "what is the elric brothers' ultimate goal in fullmetal alchemist?",
-        "expected": "The Elric brothers' ultimate goal in Fullmetal Alchemist is to find the Philosopher's Stone to restore their bodies after a failed alchemical experiment."
-    },
-    {
-        "query": "who is the main antagonist in attack on titan?",
-        "expected": "The main antagonist in Attack on Titan is often considered to be the Titans themselves, but key human antagonists include Zeke Yeager and Reiner Braun."
-    },
-    {
-        "query": "what is the significance of the basement in fullmetal alchemist?",
-        "expected": "The basement in Fullmetal Alchemist holds crucial information about the Elric brothers' family and the true nature of alchemy, which is key to their quest."
+        "query": "What are the main themes of Jujutsu Kaisen?",
+        "expected": "The main themes include the struggle between good and evil, the value of life, and the importance of friendship and teamwork."
     }
-
 ]
