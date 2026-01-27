@@ -1,0 +1,20 @@
+{
+  "name": "Maki",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Maki Zenin"],
+  "gender": "female",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High"],
+  "family_members": ["Zenin Clan"],
+  "key_relationships": ["Panda", "Toge Inumaki"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation"],
+  "status": "alive",
+  "content": "Maki Zenin is currently a second-year at Tokyo Jujutsu High.\nMaki was born in the Zenin Clan.\nBorn a non-sorcerer in one of the Big Three Sorcerer Families, Maki was constantly mistreated and felt compelled to expel herself from the Zenin clan.\nShe aspires to be a great jujutsu sorcerer to spite her family, working closely with her friends Panda and Toge Inumaki, while also serving as a role model to the first-year students.\n",
+  "metadata": {
+    "source_file": "Maki.txt",
+    "traits": ["determined", "loyal", "strong-willed"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "protagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

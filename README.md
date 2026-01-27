@@ -1,57 +1,230 @@
----
-title: Anime QA with RAG
-colorFrom: blue
-colorTo: green
-sdk: gradio
-sdk_version: 5.38.2
-app_file: app.py
-pinned: true
-short_description: A RAG model that answers AOT & FMAB questions
----
-
-# AOT & FMAB AI — Anime QA System
-
-This is an **Anime Question-Answering (QA) system** built with **Retrieval-Augmented Generation (RAG)**.  
-It lets you ask questions about **Attack on Titan (AOT)** and **Fullmetal Alchemist: Brotherhood (FMAB)** and get **accurate, context-aware answers**.
-
-### Response Modes
-
-- **Trivia** — Quick factual answers about characters, episodes, or the anime world.  
-- **Summary** — Summarizes episodes, characters, or the overall plot.  
-- **Fanfiction** — Generates short fictional stories set in the anime universe.  
 
 ---
 
-## How It Works (Workflow)
+# Spoiler-Controlled TV Show RAG Agent
 
-1. **Data Preparation** — JSON files containing episode summaries, character bios, and trivia are stored in `./json_output`.  
-2. **Embedding Generation** — Text data is converted into **vector embeddings** using **SentenceTransformers**. These embeddings are stored in **ChromaDB** for semantic search.  
-3. **Semantic Search** — User queries are matched against the database using embeddings. Typos are corrected automatically with **RapidFuzz**.  
-4. **RAG Response Generation** — Retrieved context is fed into **Google Gemini** to generate a natural, informative response in the chosen mode (trivia, summary, fanfiction).  
-5. **Delivery** — Users see the answer in either the **Gradio web app** or via **FastAPI endpoints**.
+Ever wanted to talk to a chatbot about a TV show **you’re currently watching** —
+**without accidentally getting spoilers** about future episodes?
+
+This project does exactly that.
+
+It is a **Retrieval-Augmented Generation (RAG) system** that lets you ask questions about TV shows (currently **Attack on Titan**, **Jujutsu Kaisen and **Fullmetal Alchemist: Brotherhood**) while ensuring responses are **grounded only in approved context**.
+
+No accidental spoilers.
+No future-episode leaks.
+Just what *you’ve already watched*.
 
 ---
 
-## Project Files and Execution Order
+##  What This System Does
 
-1. **`generate_embeddings.py`**  
-   - Generates vector embeddings from your JSON anime data.  
-   - Must be run **before** starting the app.  
+* Answers questions using **only retrieved context**
+* Prevents spoilers by **never generating beyond the stored data**
+* Supports multiple response styles:
 
-2. **`fastapi.py`**  
-   - Runs the **backend API**.  
-   - Users can query using endpoints like `/ask?prompt=YourQuestion&mode=trivia`.  
+  * **Trivia** — factual answers
+  * **Summary** — concise explanations
+  * **Fanfiction** — creative but context-safe stories
+* Works as:
 
-3. **`gradio_app.py`** (or `app.py`)  
-   - Launches the **interactive Gradio frontend**.  
-   - Connects to the RAG pipeline to provide instant answers.  
+  * **Interactive Gradio Web App**
+  *  **FastAPI backend for production or frontend integration**
 
-**Recommended Order to Run:**
-```bash
-python generate_embeddings.py   # Step 1: Populate ChromaDB
-python fastapi.py               # Step 2: Start backend API
-python gradio_app.py            # Step 3: Launch Gradio UI
+---
+
+## How It Works (End-to-End Workflow)
+
+### Data Preparation
+
+* Anime episode summaries, character bios, and trivia are stored as JSON files in:
+
+  ```
+  ./json_output/
+  ```
+---
+
+### Embedding Generation (One-Time Step)
+
+* Each document is converted into vector embeddings using:
+
+  * **SentenceTransformers**
+* Embeddings are stored in a **persistent ChromaDB vector database**:
+
+  ```
+  ./anime_vector_db/
+  ```
+
+This step is **required once** (or whenever data changes).
+
+---
+
+### Semantic Retrieval
+
+When a user asks a question:
+
+* The query is embedded
+* **ChromaDB** finds the most relevant documents
+* **RapidFuzz** fixes typos (e.g. *“Erin Jaeger” → “Eren Yeager”*)
+
+---
+
+### RAG Generation (Spoiler-Safe)
+
+* Retrieved context is injected into a prompt
+* **Google Gemini (Flash / Flash-Lite)** generates the response
+* The model is instructed to **use only the provided context**
+
+If the information doesn’t exist, it won’t be generated.
+---
+
+### Delivery
+
+* **Gradio UI** for interactive use
+* **FastAPI** for programmatic access (apps, websites, mobile)
+
+---
+
+## Project Structure
+
 ```
-**Important**
-Please generate embeddings first before running fastapi or the gradio app
-run generate_embeddings.py
+project/
+├── generate_embeddings.py   # Run once to build vector DB
+├── anime_vector_db/         # Persistent ChromaDB
+├── json_output/             # Source data
+├── app.py                   # Gradio UI
+├── fast_api_app.py          # FastAPI backend
+├── requirements.txt
+├── Dockerfile
+└── .env
+└── images                   # has images for graio
+└── config.py                #configurations
+└──  txt to json             # converts summaries to json
+```
+
+---
+
+## How to Run 
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/spoiler-controlled-tv-rag.git
+cd spoiler-controlled-tv-rag
+```
+---
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### Set Environment Variables
+
+Create a `.env` file:
+
+```env
+API_KEY=your_google_gemini_api_key
+```
+
+---
+
+### Generate Embeddings
+
+```bash
+python generate_embeddings.py
+```
+
+**Must be done before running app or API**
+
+---
+
+## A: Run Gradio App (UI)
+
+```bash
+python app.py
+```
+Open:
+
+```
+http://127.0.0.1:7860
+```
+
+Best for:
+
+* Demos
+* Portfolio
+* Interactive exploration
+
+---
+
+## B: Run FastAPI Backend
+
+```bash
+python fast_api_app.py
+```
+
+Open API docs:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+Example API call:
+
+```http
+GET /ask?prompt=Who is Levi Ackerman?&mode=trivia
+```
+
+Best for:
+* Frontend integration
+* Mobile apps
+* Production deployments
+
+---
+
+## Docker (Production)
+
+```bash
+docker build -t spoiler-rag .
+docker run -p 8000:8000 spoiler-rag
+```
+Embeddings must already exist before building the image.
+
+### There are some test queries in test_queries.json feel free to try them!!
+---
+
+## API vs Gradio — When to Use?
+
+| Use Case           | Choose           |
+| ------------------ | ---------------- |
+| Demo / UI          | Gradio           |
+| Production backend | FastAPI          |
+| Web / mobile app   | FastAPI          |
+| Portfolio showcase | Gradio           |
+| Cloud deployment   | FastAPI + Docker |
+
+Both use the **same RAG pipeline and vector database**.
+
+---
+
+## How to add to this project
+
+* Add new shows -> drop JSON files into `json_output/`
+* Re-run embeddings
+* Add episode-level spoiler control
+* Add authentication / rate limiting
+* Swap ChromaDB for Qdrant
+* Add streaming responses
+* Connect Gradio to FastAPI instead of direct calls
+* Add more test queries to test the responses
+---
+
+## What I learned
+> **Embeddings are data.
+> Apps are consumers.
+> Spoilers don’t exist if the data doesn’t exist.**
+
+---

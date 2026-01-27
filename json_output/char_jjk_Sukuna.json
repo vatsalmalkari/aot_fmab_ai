@@ -1,0 +1,20 @@
+{
+  "name": "Sukuna",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Ryomen Sukuna", "King of Curses", "The strongest sorcerer in history"],
+  "gender": "male",
+  "affiliations": [],
+  "family_members": [],
+  "key_relationships": ["Yuji Itadori"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation", "Domain Expansion"],
+  "status": "alive",
+  "content": "Ryomen Sukuna, more often referred to as simply Sukuna, is history’s strongest jujutsu sorcerer, born over a thousand years ago.\nRegarded as the undisputed King of Curses, Sukuna is one of the primary antagonists of the Jujutsu Kaisen series.\n",
+  "metadata": {
+    "source_file": "Sukuna.txt",
+    "traits": ["powerful", "cruel", "ruthless"],
+    "archetype": "Cursed Spirit",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

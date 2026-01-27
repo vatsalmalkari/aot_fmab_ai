@@ -1,0 +1,20 @@
+{
+  "name": "Todo",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Aoi Todo"],
+  "gender": "male",
+  "affiliations": ["Jujutsu Sorcerer", "Kyoto Jujutsu High"],
+  "family_members": [],
+  "key_relationships": ["Yuji Itadori"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation"],
+  "status": "alive",
+  "content": "Aoi Todo is a supporting character in the Jujutsu Kaisen series.\nHe is a third-year student at Kyoto Jujutsu High School and a grade 1 jujutsu sorcerer.\nHe was mentored by Yuki Tsukumo in his youth and considers Yuji Itadori his best friend.\n",
+  "metadata": {
+    "source_file": "Todo.txt",
+    "traits": ["calm", "loyal", "strong-willed"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "supporting_character",
+    "significant_locations": ["Kyoto", "Shibuya"]
+  }
+}

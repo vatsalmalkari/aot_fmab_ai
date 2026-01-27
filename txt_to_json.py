@@ -68,6 +68,13 @@ def create_episode_json(txt_path: str, anime: str) -> dict:
             season = "1"
             episode_num = parts[1]
             title = f"Fullmetal Alchemist Brotherhood Episode {episode_num}"
+    
+    elif anime =="jjk":
+        parts = filename.split('_')
+        if len(parts) == 4 and parts[0] == 'Season' and parts[2] == 'episode':
+            season = parts[1]
+            episode_num = parts[3]
+            title = f"Jujutsu Kaisen Season {season} Episode {episode_num}"
 
     return {
         "title": title,
@@ -88,7 +95,7 @@ def create_episode_json(txt_path: str, anime: str) -> dict:
 def process_folder(root_dir: str, output_dir: str):
     #Process all TXT files into JSON
     os.makedirs(output_dir, exist_ok=True)
-    anime_types = ['aot', 'fmab']
+    anime_types = ['aot', 'fmab', 'jjk']
 
     for anime in anime_types:
         # Characters
@@ -111,4 +118,4 @@ if __name__ == "__main__":
     RAW_DATA_DIR = "./raw_data"
     OUTPUT_DIR = "./json_output"
     process_folder(RAW_DATA_DIR, OUTPUT_DIR)
-    print(f"\nDONE! JSON files saved to {OUTPUT_DIR}")
+    print(f" DONE JSON files saved to {OUTPUT_DIR}")

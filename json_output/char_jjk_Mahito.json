@@ -1,0 +1,20 @@
+{
+  "name": "Mahito",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Mahito"],
+  "gender": "male",
+  "affiliations": ["Cursed Spirit"],
+  "family_members": [],
+  "key_relationships": ["Jogo", "Hanami", "Dagon"],
+  "abilities": ["Cursed Technique", "Idle transfiguration"],
+  "status": "alive",
+  "content": "Mahito is one of the primary antagonists of the Jujutsu Kaisen series.\nHe is an unregistered special grade cursed spirit allied with Pseudo-Geto.\nHe is also the leader of his own group, consisting of Jogo, Hanami, and Dagon.\nHis group's ultimate goal is the eradication of humanity and ultimately replacing the population with cursed spirits.\n",
+  "metadata": {
+    "source_file": "Mahito.txt",
+    "traits": ["cruel", "manipulative", "powerful"],
+    "archetype": "Cursed Spirit",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

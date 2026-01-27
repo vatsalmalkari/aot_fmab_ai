@@ -1,0 +1,20 @@
+{
+  "name": "Kenjaku",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Pseudo-Geto"],
+  "gender": "male",
+  "affiliations": ["Cursed Spirit"],
+  "family_members": [],
+  "key_relationships": ["Geto", "Gojo", "Riko Amanai"],
+  "abilities": ["Cursed Spirit Manipulation", "Brain Transplantation"],
+  "status": "alive",
+  "content": "Kenjaku is one of the primary antagonists of the Jujutsu Kaisen series.\nHe was an ancient curse user who existed for over a thousand years using his innate technique, which allowed him to transplant his brain into other bodies and control them.\nHe has inhabited different individuals throughout the centuries and assumed their identities.\nAmong those he has possessed was Suguru Geto, whose corpse served as Kenjaku's final vessel to exploit his Cursed Spirit Manipulation.\n He is also called Pseudo-Geto due to his possession of Geto's body.\nKenjaku orchestrated many events leading up to and during the Shibuya Incident, including the sealing of Satoru Gojo using the Prison Realm.\nHis ultimate goal appears to be the evolution of cursed energy and the creation of a world dominated by curses.\n",
+  "metadata": {
+    "source_file": "Kenjaku.txt",
+    "traits": ["cunning", "manipulative", "powerful"],
+    "archetype": "Cursed Spirit",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

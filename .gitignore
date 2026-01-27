@@ -1,13 +1,25 @@
+# Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
+*.py[cod]
+
+# Virtual environments
 .venv/
-env/
 venv/
+env/
+
+# Vector DB / embeddings
+anime_vector_db/
+chroma.sqlite3
+
+# Environment & secrets
+.env
+.env.*
+
+# OS / editor
 .DS_Store
 Thumbs.db
-.env
-aot_fmab_db/
+.vscode/
+.idea/
+
+# Logs
 *.log

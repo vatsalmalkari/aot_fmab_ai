@@ -1,0 +1,20 @@
+{
+  "name": "Yuji",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Yuji Itadori"],
+  "gender": "male",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High"],
+  "family_members": [],
+  "key_relationships": ["Sukuna", "Maki Zenin", "Gojo Satoru", "Nobara Kugisaki", "Megumi Fushiguro", "Aoi Todo"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation", "Black Flash"],
+  "status": "alive",
+  "content": "Yuji Itadori is the main protagonist of Jujutsu Kaisen.\nYuji is a first-year Jujutsu Sorcerer at Tokyo Jujutsu High who is thrown into the world of sorcery after he ate a Cursed Object: a finger belonging to Ryomen Sukuna, a powerful sorcerer from the Heian period.\nWith his classmates, Yuji exorcises Curses while trying to honor his grandfather's legacy and save others unconditionally so that when he is executed after eating all twenty fingers, he will not be alone in his death.\nThroughout the series, Yuji and exceptional Cursed Techniques are developed as he faces down different Curses and the emotional blowback of his actions.\nDespite having only practiced using Cursed Energy for a few months, Yuji is tremendously powerful even without having become Sukuna's Vessel.\nYuji believes strongly in the value of life and works to make sure everyone he meets, no matter how deep his connection to them may be, receives proper treatment and a proper death.\n",
+  "metadata": {
+    "source_file": "Yuji.txt",
+    "traits": ["strong-willed", "loyal", "compassionate"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "protagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

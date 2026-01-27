@@ -1,0 +1,20 @@
+{
+  "name": "Hanami",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Hanami"],
+  "gender": "female",
+  "affiliations": ["Cursed Spirit"],
+  "family_members": [],
+  "key_relationships": ["Jogo", "Dagon", "Mahito"],
+  "abilities": ["Cursed Technique", "Earth Manipulation"],
+  "status": "dead",
+  "content": "Hanami is an antagonist in the Jujutsu Kaisen series.\nThey were an unregistered special grade cursed spirit aligned with Jogo, Dagon, and Mahito.\nHanami was born from the fear of land-based natural disasters and they desired to rid the earth of humanity because of their mistreatment of nature.\n",
+  "metadata": {
+    "source_file": "Hanami.txt",
+    "traits": ["fearful", "vengeful", "protective"],
+    "archetype": "Cursed Spirit",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

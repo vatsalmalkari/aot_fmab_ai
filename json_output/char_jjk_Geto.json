@@ -1,0 +1,20 @@
+{
+  "name": "Geto",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Suguru Geto"],
+  "gender": "male",
+  "affiliations": ["Curse User", "Former Jujutsu Sorcerer", "Tokyo Jujutsu High", "Riko Amanai"],
+  "family_members": [],
+  "key_relationships": ["Satoru Gojo", "Shoko Ieiri", "Masamichi Yaga"],
+  "abilities": ["Cursed Energy Manipulation", "Curse User Techniques"],
+  "status": "dead",
+  "content": "Suguru Geto is an antagonist in Jujutsu Kaisen series.\nHe was originally a student of Masamichi Yaga's alongside Satoru Gojo and Shoko Ieiri at Tokyo Jujutsu High.\nHis experiences as a jujutsu sorcerer bred a deep hatred for non-sorcerers, leading to an incident where Suguru massacred over a hundred civilians in a single night.\nHe was expelled from Jujutsu High and came to be known as the worst of all curse users.\n",
+  "metadata": {
+    "source_file": "Geto.txt",
+    "traits": ["cruel", "manipulative", "ruthless"],
+    "archetype": "Former Jujutsu Sorcerer",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

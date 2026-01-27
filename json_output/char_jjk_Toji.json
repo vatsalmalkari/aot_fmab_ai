@@ -1,0 +1,20 @@
+{
+  "name": "Toji",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Toji Fushiguro"],
+  "gender": "male",
+  "affiliations": ["Zenin Clan", "Star Religious Group"],
+  "family_members": ["Megumi Fushiguro"],
+  "key_relationships": ["Satoru Gojo"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation", "Cursed Tool Mastery"],
+  "status": "alive",
+  "content": "Toji Fushiguro is a recurring character in the Jujutsu Kaisen series.\nHe was a former member of the Zenin clan and the infamous assassin known as the Sorcerer Killer, contracted by the Time Vessel Association among other groups throughout his time as a non-curse user.\nHe was also the father of Megumi Fushiguro and former enemy of Satoru Gojo.\nWhile working for the Star Religious Group, Toji serves as the primary antagonist of the Gojo's Past Arc",
+  "metadata": {
+    "source_file": "Toji.txt",
+    "traits": ["cruel", "ruthless", "powerful"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

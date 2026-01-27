@@ -1,0 +1,20 @@
+{
+  "name": "Jogo",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Jogo"],
+  "gender": "male",
+  "affiliations": ["Cursed Spirit"],
+  "family_members": [],
+  "key_relationships": ["Mahito", "Hanami", "Dagon"],
+  "abilities": ["Cursed Technique", "Earth Manipulation"],
+  "status": "dead",
+  "content": "Jogo is a major antagonist in the Jujutsu Kaisen series.\nHe was an unregistered special grade cursed spirit aligned with Mahito, Hanami, and Dagon.\nJogo believed curses were the true humans and desired a world where his kind dominated the earth.\n",
+  "metadata": {
+    "source_file": "Jogo.txt",
+    "traits": ["cruel", "manipulative", "ruthless"],
+    "archetype": "Cursed Spirit",
+    "narrative_function": "antagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

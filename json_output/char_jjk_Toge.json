@@ -1,0 +1,20 @@
+{
+  "name": "Toge",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Toge Inumaki"],
+  "gender": "male",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High"],
+  "family_members": [],
+  "key_relationships": ["Yuta Okkotsu", "Maki Zenin", "Panda"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation"],
+  "status": "alive",
+  "content": "Toge Inumaki is a descendant of the Inumaki clan and has inherited the clan's cursed speech, which he's developed his own unique speech pattern for in order to avoid cursing others.\nToge is currently a semi-grade 1 jujutsu sorcerer and second-year at Tokyo Jujutsu High alongside his classmates Yuta, Maki, and Panda.\n",
+  "metadata": {
+    "source_file": "Toge.txt",
+    "traits": ["calm", "loyal", "strong-willed"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "supporting_character",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

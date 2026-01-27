@@ -1,0 +1,20 @@
+{
+  "name": "Yuta",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Yuta Okkotsu"],
+  "gender": "male",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High"],
+  "family_members": [],
+  "key_relationships": ["Satoru Gojo", "Rika Orimoto", "Yuji Itadori"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation", "Domain Expansion"],
+  "status": "alive",
+  "content": "Yuta Okkotsu is a teenager who is surrounded and helped by the Cursed Spirit of Rika Orimoto, his childhood friend who died six years before the story and is cursed because both of them promised to get married when they grow up.\nDuring his teenage years, Yuta meets Satoru Gojo, a Jujutsu Sorcerer under whose guidance he joined Tokyo Jujutsu high to control Rika's Curse.\n",
+  "metadata": {
+    "source_file": "Yuta.txt",
+    "traits": ["calm", "loyal", "strong-willed"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "supporting_character",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

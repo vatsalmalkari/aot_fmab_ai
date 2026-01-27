@@ -1,0 +1,20 @@
+{
+  "name": "Panda",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Panda"],
+  "gender": "male",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High"],
+  "family_members": [],
+  "key_relationships": ["Maki Zenin", "Toge Inumaki", "Yuta Okkotsu"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation"],
+  "status": "alive",
+  "content": "Panda is a major supporting character in Jujutsu Kaisen.\nDespite his name and appearance, Panda is not an actual panda, but instead an Abrupt-Mutation Cursed Corpse created by Masamichi Yaga.\nHe attends Jujutsu High as a second-year student along with Maki Zenin, Toge Inumaki, and Yuta Okkotsu.\n",
+  "metadata": {
+    "source_file": "Panda.txt",
+    "traits": ["calm", "loyal", "strong-willed"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "supporting_character",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

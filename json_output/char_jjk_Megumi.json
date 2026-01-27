@@ -1,0 +1,20 @@
+{
+  "name": "Megumi",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Megumi Fushiguro"],
+  "gender": "male",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High"],
+  "family_members": ["Zenin Clan"],
+  "key_relationships": ["Yuji Itadori", "Nobara Kugisaki", "Maki Zenin"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation"],
+  "status": "alive",
+  "content": "Megumi Fushiguro was born on December 22, 2002, is a first-year student at Tokyo Jujutsu High, an academy to become a Jujutsu Sorcerer and develop Cursed Techniques to fight against Cursed Spirits, beings manifested from Cursed Energy due to negative emotions flowing from humans.\nHe is a descendant to the Zen'in family, one of the ultimate clans dominating the world of sorcery.\nEarly in Jujutsu Kaisen, he is instructed by teacher Satoru Gojo to locate one of Sukuna's fingers, objects belonging to the most powerful Cursed Spirit of all time which leads to him partnering with and befriending Yuji Itadori, a fellow first-year Jujutsu Sorcerer.\n",
+  "metadata": {
+    "source_file": "Megumi.txt",
+    "traits": ["calm", "intelligent", "loyal"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "protagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

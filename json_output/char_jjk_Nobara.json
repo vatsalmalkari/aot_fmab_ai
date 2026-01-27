@@ -1,0 +1,20 @@
+{
+  "name": "Nobara",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Nobara Kugisaki"],
+  "gender": "female",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High"],
+  "family_members": [],
+  "key_relationships": ["Yuji Itadori", "Megumi Fushiguro", "Maki Zenin"],
+  "abilities": ["Cursed Technique", "Cursed Energy Manipulation"],
+  "status": "alive",
+  "content": "Nobara Kugisaki is a first-year student at Tokyo Jujutsu High, an academy to hone Cursed Techniques to fight against Cursed Spirits arising from negative emotions from humans, she is under the tutelage of Satoru Gojo alongside Yuji Itadori and Megumi Fushiguro.\nShe is a transfer student from Morioka whose hotheadedness and brashness contrast with the other first-year students' altruism and stoicism.\n",
+  "metadata": {
+    "source_file": "Nobara.txt",
+    "traits": ["hot-headed", "brash", "determined"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "protagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Gojo",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Satoru Gojo", "The Strongest Jujutsu Sorcerer", "The chosen one"],
+  "gender": "male",
+  "affiliations": ["Jujutsu Sorcerer", "Tokyo Jujutsu High", "Gojo Clan"],
+  "family_members": ["Gojo Clan"],
+  "key_relationships": ["Geto", "Riko Amanai"],
+  "abilities": ["Limitless", "Six Eyes", "Cursed Energy Manipulation"],
+  "status": "alive",
+  "content": "Satoru Gojo is a special grade jujutsu sorcerer and widely recognized as the strongest in the world.\nSatoru is the pride of the Gojo Clan, the first person to inherit both the Limitless and the Six Eyes in four hundred years.\nHe works as a teacher at the Tokyo Jujutsu High and uses his influence to protect and train strong young allies.\n",
+  "metadata": {
+    "source_file": "Gojo.txt",
+    "traits": ["powerful", "confident", "charismatic"],
+    "archetype": "Jujutsu Sorcerer",
+    "narrative_function": "protagonist",
+    "significant_locations": ["Tokyo", "Shibuya"]
+  }
+}

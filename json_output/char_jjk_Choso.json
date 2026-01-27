@@ -1,0 +1,20 @@
+{
+  "name": "Choso",
+  "anime": "jjk",
+  "type": "character",
+  "aliases": ["Choso"],
+  "gender": "male",
+  "affiliations": ["Cursed Womb"],
+  "family_members": ["Kechizu", "Eso"],
+  "key_relationships": ["Kechizu", "Eso", "Noritoshi Kamo"],
+  "abilities": ["Cursed Technique", "Death Painting Womb"],
+  "status": "Alive",
+  "content": "Choso is a supporting character in the Jujutsu Kaisen series.\nHe and his two brothers, Kechizu and Eso are incarnated Cursed Womb: Death Paintings No.\n1-3.\nChoso initially sided with Kenjaku's alliance with Mahito until he discovered one of the curse user's past identities was the cruel father of the Death Painting Wombs, Noritoshi Kamo.\nHe also found out that Yuji Itadori is another relative of Kenjaku's and has aligned himself with his new \"younger brother\".\n",
+  "metadata": {
+    "source_file": "Choso.txt",
+    "traits": ["loyal", "determined", "protective"],
+    "archetype": "Cursed Womb",
+    "narrative_function": "supporting character",
+    "significant_locations": ["Tokyo", "Malaysia", "Shibuya"]
+  }
+}
